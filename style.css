@@ -1,7 +1,7 @@
-@import url('//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import url('http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
 
 @font-face {
-    font-family: 'collegiateregular';
+    font-family: 'Collegiate';
     src: url('font/collegia-webfont.eot');
     src: url('font/collegia-webfont.eot?#iefix') format('embedded-opentype'),
          url('font/collegia-webfont.woff') format('woff'),
@@ -19,13 +19,45 @@ html {
 	font-size: 16px;
 }
 body {
-	padding: 3.5em 1em 0 1em;
+	padding: 3.5em 1em;
 	color: #000;
+	font-family: 'Collegiate', sans-serif;
+}
+header, .content {
+	max-width: 800px;
+	margin: auto;
 }
 h1 {
-	font: 10.625em Collegiate;
+	font-size: 10.625em ;
 	text-align: center;
+	margin-bottom: 0.25em;
 }
-span {
+h2 {
+	font-size: 5em;
+	text-align: center;
+	margin-bottom: 3em;
+}
+h3 {
+	font-size: 5em;
+	border-bottom: 5px solid #000;
+	margin: 0.75em 0 0.25em 0;
+}
+mark {
 	color: #1393d5;
+	background: none;
+}
+p, li {
+	font-size: 3em;
+	line-height: 1.2em;
+}
+a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #1393d5;
+}
+footer {
+	margin-top: 10em;
+	text-align: center;
 }
