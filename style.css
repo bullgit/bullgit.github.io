@@ -10,6 +10,42 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+	font-family: 'bullgit';
+	src:url('font/bullgit.eot');
+	src:url('font/bullgit.eot?#iefix') format('embedded-opentype'),
+		url('font/bullgit.woff') format('woff'),
+		url('font/bullgit.ttf') format('truetype'),
+		url('font/bullgit.svg#bullgit') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.icon-github, .icon-twitter, .icon-confused, .icon-lab, .icon-arrow-down {
+	font-family: 'bullgit';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-github:before {
+	content: "\e000";
+}
+.icon-twitter:before {
+	content: "\e001";
+}
+.icon-confused:before {
+	content: "\e002";
+}
+.icon-lab:before {
+	content: "\e003";
+}
+.icon-arrow-down:before {
+	content: "\e004";
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -45,12 +81,12 @@ h1 {
 h2 {
 	font-size: 5em;
 	text-align: center;
-	margin-bottom: 3em;
+	margin-bottom: 2.5em;
 }
 h3 {
 	font-size: 5em;
 	border-bottom: 5px solid #000;
-	margin: 0.75em 0 0.25em 0;
+	margin: 1.5em 0 0.25em 0;
 }
 mark {
 	color: #1393d5;
@@ -59,6 +95,9 @@ mark {
 p, li {
 	font-size: 3em;
 	line-height: 1.2em;
+}
+.text-center {
+	text-align: center;
 }
 a:link, a:visited {
 	color: #000;
