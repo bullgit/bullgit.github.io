@@ -1,3 +1,31 @@
+@import url('//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+
+@font-face {
+    font-family: 'collegiateregular';
+    src: url('font/collegia-webfont.eot');
+    src: url('font/collegia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/collegia-webfont.woff') format('woff'),
+         url('font/collegia-webfont.ttf') format('truetype'),
+         url('font/collegia-webfont.svg#collegiateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
 body {
-  background: #fff url('http://s.gravatar.com/avatar/405fdb9dfa7ab527e7eadc49c7618695?s=420') center top no-repeat;
+	padding: 25px 1em 0 1em;
+	color: #000;
+}
+h1 {
+	font: 10.625em Collegiate;
+	text-align: center;
+}
+span {
+	color: #1393d5;
 }
