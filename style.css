@@ -88,6 +88,9 @@ h3 {
 	border-bottom: 5px solid #000;
 	margin: 1.5em 0 0.25em 0;
 }
+h3 i {
+	font-size: 0.8em;
+}
 mark {
 	color: #1393d5;
 	background: none;
