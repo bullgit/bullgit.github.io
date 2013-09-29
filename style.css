@@ -20,7 +20,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
-.icon-github, .icon-twitter, .icon-confused, .icon-lab, .icon-arrow-down {
+.icon-github, .icon-twitter, .icon-confused, .icon-lab, .icon-arrow-down, .icon-bubbles {
 	font-family: 'bullgit';
 	speak: none;
 	font-style: normal;
@@ -44,6 +44,10 @@
 }
 .icon-arrow-down:before {
 	content: "\e004";
+}
+
+.icon-bubbles:before {
+	content: "\e005";
 }
 
 * {
