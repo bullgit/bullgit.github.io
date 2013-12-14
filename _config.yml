@@ -1,0 +1,8 @@
+# the basic jekyll setup
+source: .
+destination: ./_site
+layouts: ./_layouts
+
+# defining permalinks
+permalink: :title
+paginate_path: 'page:num'

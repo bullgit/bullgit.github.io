@@ -1,0 +1,20 @@
+<footer class="site--footer">
+<section class="featured--wrap">
+
+    {% for member in site.data.members %}
+    <div class="group--member">
+        <a href="http://twitter.com/{{ member.twitter }}">
+            <img src="{{ member.gravatar }}" alt="">
+        </a>
+        <h4>{{ member.name }}</h4>
+        <div class="social">
+            <a href="http://{{ member.url }}" class="genericon-link"></a>
+            <a href="http://github.com/{{ member.github }}" class="genericon-github"></a>
+            <a href="http://codepen.io/{{ member.codepen }} " class="genericon-codepen"></a>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+</footer>
+</body>
+</html>
