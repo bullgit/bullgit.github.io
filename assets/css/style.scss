@@ -129,13 +129,11 @@ a {
 }
 
 
-
 .content--wrap {
     width:100%;
     max-width:50em;
     height:auto;
-    margin:0 auto;
-    padding-right: 1em;
+    margin:2.5em auto;
 }
 
 
@@ -168,12 +166,6 @@ a {
    .featured--wrap {
         padding:1.5em .5em;
    }
-}
-
-.projects--wrap {
-    margin:2.5em auto;
-
-    @extend .cf;
 }
 
 .project {
