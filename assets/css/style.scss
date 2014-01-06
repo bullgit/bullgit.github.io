@@ -171,7 +171,8 @@ a {
 
 .loader--bar {
   height: 4px;
-  width: 25em;
+  width:100%;
+  max-width: 25em;
   background: #3498db;
   margin: auto;
   position:relative;
