@@ -1,6 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-   // '- waiting for the DOM to finish loading, equal to $(document).ready() in jQuery
-
 // replace function by Olly (@0x04)
 function replace(result) {
   for (var index = 1, length = arguments.length; index < length; index++)
@@ -10,17 +7,23 @@ function replace(result) {
   
   return result;
 }
+    // The loader element
+    var loader = document.querySelector("[data-js='loader']");
 
     // loading a new Ajax Request
     var xml = new XMLHttpRequest();
     
     // opening a connection
-    xml.open('GET','https://api.github.com/orgs/bullgit/repos', false);
+    xml.open('GET','https://api.github.com/orgs/bullgit/repos', true);
     
 
 
     // when the state changed (data received )
     xml.onreadystatechange = function() {
+      // waiting until the response is ready
+      if (xml.status==200 && xml.readyState==4){
+          // removing the loader after we got the repos
+          document.querySelector("[data-js=featured-project]").removeChild(loader);
         // controller for the grid system
         var j;
         // we take the response
@@ -66,12 +69,10 @@ function replace(result) {
               switch(j) {
                 case 1:
                   var output = document.querySelector("[data-column='1']");
-                  console.log("case 1: " + j + " --- " + obj[i]['name'])
                   j++;
                   break;
                 case 2:
                   var output = document.querySelector("[data-column='2']");
-                  console.log("case 2: " + j + " --- " + obj[i]['name'])
                   j = 1;
                   break;
                 default:
@@ -81,8 +82,18 @@ function replace(result) {
             // and adding our brand-new bullshit to it.
             output.innerHTML += layout;
         }
-    };
+    } else {
+      loader.innerHTML = "Unable to fetch repos from Github.";
+    }
+  }
 
     // sending data
-    xml.send();    
-});
+    xml.send();
+
+    // Google Analytics
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-46322057-1', 'bullg.it');
+ga('send', 'pageview');

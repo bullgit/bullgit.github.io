@@ -2,7 +2,9 @@
 // @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
 @import "font/genericons/genericons.css";
 
-@import "components/bullgrid";
+@import "components/bullgrid",
+        "components/mixins";
+        
 
 .cf {
   &:before, &:after {
@@ -157,6 +159,59 @@ a {
    .featured--wrap {
         padding:1.5em .5em;
    }
+}
+
+
+// Loader by Max: http://codepen.io/MyXoToD/pen/ayDgk
+.loader {
+  color:#fff;
+  text-align: center;
+  padding:1.5em;    
+}
+
+.loader--bar {
+  height: 4px;
+  width: 25em;
+  background: #3498db;
+  margin: auto;
+  position:relative;
+
+  &:before {
+    content: "";
+    height: 4px;
+    width: 4px;
+    background: #333;
+    top: 0;
+    left: 0%;
+    position: absolute;
+    -webkit-animation: load 1s 0s infinite linear;
+    animation: load 1s 0s infinite linear;
+  }
+  &:after {
+    content: "";
+    height: 4px;
+    width: 4px;
+    background: #333;
+    top: 0;
+    left: 0%;
+    position: absolute;
+    -webkit-animation: load 1s 0.5s infinite linear;
+    animation: load 1s 0.5s infinite linear;
+  }
+}
+
+
+
+@include keyframe(load) {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 30%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 .project {

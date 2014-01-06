@@ -2,12 +2,14 @@
 // @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
 @import "font/genericons/genericons.css";
 
-@import "components/bullgrid";
+@import "components/bullgrid",
+        "components/mixins";
+        
 
 .cf {
   &:before, &:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    display: table;
   }    
   &:after {
     clear: both;
@@ -57,16 +59,6 @@ a {
 */
 
 .site--header {
-    width:100%;
-    height: auto;
-    padding:2.5em 0;
-
-    @extend .cf;
-
-    .site--meta {
-        float: left;
-    }
-
     .site--headline {
         position: relative;
         padding-left:2.5em;
@@ -109,6 +101,7 @@ a {
     }
 }
 
+
 .site--navigation {
     float: right;
     margin-top: 2em;
@@ -129,13 +122,11 @@ a {
 }
 
 
-
 .content--wrap {
     width:100%;
     max-width:50em;
     height:auto;
-    margin:0 auto;
-    padding-right: 1em;
+    margin:2.5em auto;
 }
 
 
@@ -170,10 +161,57 @@ a {
    }
 }
 
-.projects--wrap {
-    margin:2.5em auto;
 
-    @extend .cf;
+// Loader by Max: http://codepen.io/MyXoToD/pen/ayDgk
+.loader {
+  color:#fff;
+  text-align: center;
+  padding:1.5em;    
+}
+
+.loader--bar {
+  height: 4px;
+  width: 25em;
+  background: #3498db;
+  margin: auto;
+  position:relative;
+
+  &:before {
+    content: "";
+    height: 4px;
+    width: 4px;
+    background: #333;
+    top: 0;
+    left: 0%;
+    position: absolute;
+    -webkit-animation: load 1s 0s infinite linear;
+    animation: load 1s 0s infinite linear;
+  }
+  &:after {
+    content: "";
+    height: 4px;
+    width: 4px;
+    background: #333;
+    top: 0;
+    left: 0%;
+    position: absolute;
+    -webkit-animation: load 1s 0.5s infinite linear;
+    animation: load 1s 0.5s infinite linear;
+  }
+}
+
+
+
+@include keyframe(load) {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 30%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 .project {

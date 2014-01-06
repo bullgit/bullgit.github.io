@@ -3,18 +3,18 @@
     <title> bullgit - serving finest shit since 2013 </title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js"></script>
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">  
     <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">  
 </head>
 <body>
-<header class="site--header">
-    <div class="content--wrap">
-        <div class="site--meta">
+<div class="content--wrap">
+<header class="gw  site--header">
+        <div class="g one-half medium-one-whole">
             <h1 class="site--headline"><span class="deco--blue">bull</span>git</h1>
             <h2>welcome to awesomeness</h2>
         </div>
 
+        <div class="g one-half medium-one-whole">
         <nav role="navigation" class="site--navigation">
             <ul>
                 <li class="nav--list-item">
@@ -28,21 +28,24 @@
                 </li>
             </ul>
         </nav>
-
     </div>
 </header>
+</div>
 
 
 <section class="featured--wrap" data-js="featured-project">
-    
+    <div data-js="loader" class="loader">
+        <h1>FETCHING REPOS</h1>
+        <div class="loader--bar"></div>
+    </div>
 </section>
 
-<section class="content--wrap  projects--wrap gw" data-js="old-projects">
-<article class="g one-half  medium-one-whole  small-one-whole" data-column="1"></article>
-
-<article class="g one-half  medium-one-whole  small-one-whole" data-column="2"></article>
-
+<div class="content--wrap">   
+<section class="gw" data-js="old-projects">
+    <article class="g one-half  medium-one-whole  small-one-whole" data-column="1"></article>
+    <article class="g one-half  medium-one-whole  small-one-whole" data-column="2"></article>
 </section>
+</div>
 
 <footer class="site--footer">
 <section class="featured--wrap">
@@ -159,4 +162,21 @@
 </section>
 </footer>
 </body>
+<script type="text/javascript">
+// Add a script element as a child of the body
+function downloadJSAtOnload() {
+var element = document.createElement('script');
+element.src = 'assets/js/main.js';
+document.body.appendChild(element);
+}
+
+// Check for browser support of event handling capability
+if (window.addEventListener) {
+window.addEventListener("load", downloadJSAtOnload, false);
+} else if (window.attachEvent) {
+window.attachEvent("onload", downloadJSAtOnload);
+} else {
+window.onload = downloadJSAtOnload;
+}
+</script>
 </html>
