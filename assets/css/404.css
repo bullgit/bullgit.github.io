@@ -1,0 +1,18 @@
+@import url(http://weloveiconfonts.com/api/?family=fontelico);
+/* fontelico */
+[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+}
+
+body {
+  background: #1393d5;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.5em;
+}
+body a {
+  color: inherit;
+}
+body p {
+  text-align: center;
+}
