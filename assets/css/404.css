@@ -16,3 +16,8 @@ body a {
 body p {
   text-align: center;
 }
+@media all and (max-width: 40em) {
+  body {
+    font-size: 1.4em;
+  }
+}
