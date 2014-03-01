@@ -4,13 +4,13 @@
 
 @import "components/bullgrid",
         "components/mixins";
-        
+
 
 .cf {
   &:before, &:after {
     content: " ";
     display: table;
-  }    
+  }
   &:after {
     clear: both;
   }
@@ -20,6 +20,8 @@
 
 $color--main: #1393d5;
 $color--light: #f1f1f1;
+
+$color--target: #ff6347;
 
 * {
     margin: 0;
@@ -50,11 +52,11 @@ a {
 
 
 /* ==================================
- * 
+ *
  *  HEADER
- * 
- * 
- * 
+ *
+ *
+ *
  * ==================================
 */
 
@@ -62,14 +64,14 @@ a {
     .site--headline {
         position: relative;
         padding-left:2.5em;
-        
+
         @include breakpoint(small) {
             display:block;
             padding: 0 0 0 .7em;
             margin-top: 2em;
             text-align: center;
         }
-    
+
         &:before {
             content:'';
             width:2em;
@@ -166,7 +168,7 @@ a {
 .loader {
   color:#fff;
   text-align: center;
-  padding:1.5em;    
+  padding:1.5em;
 }
 
 .loader--bar {
@@ -232,7 +234,7 @@ a {
 
 .site--footer {
     color:$color--light;
-    text-align: center; 
+    text-align: center;
 
     p {
         margin-bottom: 1.5em;
@@ -250,12 +252,17 @@ a {
         height: auto;
         margin-bottom: .5em;
 
-        @include border-radius(100%);        
+        @include border-radius(100%);
         @include transition(all ease-in-out .2s);
 
         &:hover {
             border:.5em solid $color--main;
             @include transition(all ease-in-out .2s);
+        }
+
+        &:target {
+            border:.5em solid $color--target;
+            @include transition(all ease-in-out .3s);
         }
     }
 
