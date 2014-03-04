@@ -5,7 +5,7 @@
     var xml = new XMLHttpRequest();
     
     // opening a connection
-    xml.open('GET','https://api.github.com/orgs/bullgit/repos', true);
+    xml.open('GET','https://api.github.com/orgs/bullgit/repos?per_page=100', true);
     
 
 
