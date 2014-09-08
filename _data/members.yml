@@ -5,14 +5,6 @@
   codepen: reimersjan
   gravatar: http://www.gravatar.com/avatar/7d0be1c79210e8fa3ffe0b0895780fe0?s=200
 
-- name: Felix
-  twitter: dervondenbergen
-  url: demont.is
-  github: dervondenbergen
-  codepen: dervondenbergen
-  gravatar: http://www.gravatar.com/avatar/68bb57deeafda8981e331a91036f6184?s=200
-
-
 - name: Tim
   twitter: timpietrusky
   url: timpietrusky.com
@@ -20,6 +12,33 @@
   codepen: timpietrusky
   gravatar: http://www.gravatar.com/avatar/13a9550a854af911366d9f5deb785cd6?s=200
 
+- name: Kevin
+  twitter: _kevinatari
+  url: kevingimbel.com
+  github: kevingimbel
+  codepen: kevingimbel
+  gravatar: http://www.gravatar.com/avatar/6d391d8c3a528122f3f6c991821350ac?s=200
+
+- name: Max
+  twitter: MyXoToD
+  url: myxotod.com
+  github: myxotod
+  codepen: MyXoToD
+  gravatar: http://www.gravatar.com/avatar/a284083f6f4f9446723adf3b97b90151?s=200
+
+- name: Luky
+  twitter: LukyVj
+  url: lucasbonomi.com
+  github: LukyVj
+  codepen: LukyVj
+  gravatar: http://www.gravatar.com/avatar/1ef5a7c2cc326fb4d4bfef8664bdeb49?s=200
+
+- name: Felix
+  twitter: dervondenbergen
+  url: demont.is
+  github: dervondenbergen
+  codepen: dervondenbergen
+  gravatar: http://www.gravatar.com/avatar/68bb57deeafda8981e331a91036f6184?s=200
 
 - name: Kanu
   twitter: kmandalwala
@@ -42,27 +61,6 @@
   codepen: \0x04
   gravatar: http://www.gravatar.com/avatar/7394c127882b3240818c86bbdc007599?s=200
 
-- name: Max
-  twitter: MyXoToD
-  url: myxotod.com
-  github: myxotod
-  codepen: MyXoToD
-  gravatar: http://www.gravatar.com/avatar/a284083f6f4f9446723adf3b97b90151?s=200
-
-- name: Luky
-  twitter: LukyVj
-  url: lucasbonomi.com
-  github: LukyVj
-  codepen: LukyVj
-  gravatar: http://www.gravatar.com/avatar/1ef5a7c2cc326fb4d4bfef8664bdeb49?s=200
-
-- name: Kevin
-  twitter: _kevinatari
-  url: kevingimbel.com
-  github: kevingimbel
-  codepen: kevingimbel
-  gravatar: http://www.gravatar.com/avatar/6d391d8c3a528122f3f6c991821350ac?s=200
-
 - name: Nick
   twitter: shvelo96
   url: pirrate.me
@@ -83,10 +81,17 @@
   github: jofpin
   codepen: jofpin
   gravatar: http://gravatar.com/avatar/03fa031e319e5612de08ad359e7742cb?s=200
-  
+
 - name: Leeroyd
   twitter: leeroydl
   url: leeroyd.com
   github: leeroyd
   codepen: leeroyd
   gravatar: http://www.gravatar.com/avatar/b48a8a25d52dd1eda00c675acea7f628?s=200
+
+- name: Tim
+  twitter: tbogdanov80
+  url: timbog80.github.io
+  github: timbog80
+  codepen: tbogdanov80
+  gravatar: https://avatars1.githubusercontent.com/u/7907024?v=2&s=460
