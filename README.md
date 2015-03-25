@@ -29,7 +29,7 @@ To add members add a new entry to the [_data/members.yml](https://github.com/bul
 
 ### Projects
 
-The Projects are autoamtically added via the GitHub API. Every new repo is listed on the main page.
+The Projects are automatically added via the GitHub API. Every new repo is listed on the main page.
 
 ### Join bullgit
 
