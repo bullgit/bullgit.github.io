@@ -1,0 +1,16 @@
+---
+layout: nil
+---
+{
+  "gitches": [{% for member in site.data.members %}
+    {
+      "name": "{{ member.name }}", 
+      "twitter": "{{ member.twitter }}", 
+      "url": "{{ member.url }}", 
+      "github": "{{ member.github }}", 
+      "codepen": "{{ member.codepen }}", 
+      "gravatar": "{{ member.gravatar }}"{% if member.latlon %},
+      "latlon": [{{ member.latlon[0] }}, {{ member.latlon[1] }}]{% endif %}
+    }{% if forloop.last %}{% else %},{% endif %}
+  {% endfor %}]
+}
