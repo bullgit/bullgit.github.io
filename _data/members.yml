@@ -4,107 +4,154 @@
   github: reimersjan
   codepen: reimersjan
   gravatar: http://www.gravatar.com/avatar/7d0be1c79210e8fa3ffe0b0895780fe0?s=200
-
+  latlon:
+    - 53.553407
+    - 9.992196
 - name: Tim
   twitter: timpietrusky
   url: timpietrusky.com
   github: timpietrusky
   codepen: timpietrusky
   gravatar: http://www.gravatar.com/avatar/13a9550a854af911366d9f5deb785cd6?s=200
-
+  latlon:
+    - 50.1109221
+    - 8.6821267
+  
 - name: Kevin
   twitter: _kevinatari
   url: kevingimbel.com
   github: kevingimbel
   codepen: kevingimbel
   gravatar: http://www.gravatar.com/avatar/6d391d8c3a528122f3f6c991821350ac?s=200
-
+  latlon:
+    - 50.0123996
+    - 8.4217125
+  
 - name: Max
   twitter: MyXoToD
   url: myxotod.com
   github: myxotod
   codepen: MyXoToD
   gravatar: http://www.gravatar.com/avatar/a284083f6f4f9446723adf3b97b90151?s=200
-
+  latlon:
+    - 49.9928617
+    - 8.2472526
+  
 - name: Luky
   twitter: LukyVj
   url: lucasbonomi.com
   github: LukyVj
   codepen: LukyVj
   gravatar: http://www.gravatar.com/avatar/1ef5a7c2cc326fb4d4bfef8664bdeb49?s=200
-
+  latlon:
+    - 48.8603445
+    - 2.30573760
+  
 - name: Felix
   twitter: dervondenbergen
   url: https://demont.is
   github: dervondenbergen
   codepen: dervondenbergen
   gravatar: http://www.gravatar.com/avatar/68bb57deeafda8981e331a91036f6184?s=200
-
+  latlon:
+    - 48.2081743
+    - 16.3738189
+  
 - name: Kanu
   twitter: kmandalwala
   url: seebeetee.com
   github: krman009
   codepen: kman
   gravatar: http://www.gravatar.com/avatar/69853eaa3e2af813cb7f1bb8bda64012?s=200
-
+  latlon:
+    - 22.3038945
+    - 70.8021599
+  
 - name: Nils
   twitter: schoenwaldnils
   url: nils.schoenwald-media.de
   github: schoenwaldnils
   codepen: schoenwaldnils
   gravatar: http://www.gravatar.com/avatar/ddd025871fb3f8225031a011d5d7b08c?s=200
-
+  latlon:
+    - 53.553407
+    - 9.992196
+  
 - name: Olly
   twitter: /0x04
   url: 0x04.de
   github: /0x04
   codepen: /0x04
   gravatar: http://www.gravatar.com/avatar/7394c127882b3240818c86bbdc007599?s=200
-
+  latlon:
+    - 47.8966802
+    - 10.4151477
+  
 - name: Nick
   twitter: shvelo96
   url: pirrate.me
   github: shvelo
   codepen: shvelo
   gravatar: http://www.gravatar.com/avatar/5757771770a152302b03f8e78c7b105a?s=200
-
+  latlon:
+    - 41.716667
+    - 44.783333
+  
 - name: Ty
   twitter: TyBpa
   url: tystrong.me
   github: tystrong
   codepen: spikeyty
   gravatar: http://gravatar.com/avatar/27156a00138d4f99d6edb350e3bb9a75?s=200
-
+  latlon:
+    - 39.440336
+    - -84.3621634
+  
 - name: José
   twitter: jofpin
   url: mrjopino.com
   github: jofpin
   codepen: jofpin
   gravatar: http://gravatar.com/avatar/03fa031e319e5612de08ad359e7742cb?s=200
-
+  latlon:
+    - 4.598056
+    - -74.075833
+  
 - name: Leeroyd
   twitter: leeroydl
   url: leeroyd.com
   github: leeroyd
   codepen: leeroyd
   gravatar: http://www.gravatar.com/avatar/b48a8a25d52dd1eda00c675acea7f628?s=200
-
+  latlon:
+    - 48.856614
+    - 2.3522219
+  
 - name: Tim
   twitter: tbogdanov80
   url: timbog80.github.io
   github: timbog80
   codepen: tbogdanov80
   gravatar: https://avatars1.githubusercontent.com/u/7907024?v=2&s=460
-
+  latlon:
+    - 45.815115
+    - -122.7426009
+  
 - name: Clément
   twitter: jQzzzz
   url: clement-galidie.fr
   github: clementgalidie
   codepen: jQzz
   gravatar: https://avatars2.githubusercontent.com/clementgalidie?&s=256
-  
+  latlon:
+    - 48.861417
+    - 2.536463
+    
 - name: Haroen
   twitter: haroenv
   url: haroenv.github.io
   github: haroenv
   gravatar: https://avatars2.githubusercontent.com/u/6270048?v=3&s=460
+  latlon:
+    - 51.21996787685509
+    - 3.2211304939333743
