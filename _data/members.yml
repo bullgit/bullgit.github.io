@@ -156,3 +156,21 @@
   latlon:
     - 51.21996787685509
     - 3.2211304939333743
+
+- name: Hugo
+  twitter: darbybrown
+  url: darbybrown.com
+  github: DarbyBrown
+  gravatar: https://pbs.twimg.com/profile_images/500378455394246656/rhoHuudh.jpeg
+   latlon:
+    - 50.822841
+    - -0.137045
+
+- name: Scott
+  twitter: usabilitydick
+  url: scottnix.com
+  github: scottnix
+  gravatar: https://avatars1.githubusercontent.com/u/936749?v=3&s=460
+  latlon:
+    - 32.706620
+    - -117.107180
