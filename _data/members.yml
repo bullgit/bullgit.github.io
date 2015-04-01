@@ -70,13 +70,13 @@
   
 - name: Nils
   twitter: schoenwaldnils
-  url: nils.schoenwald-media.de
+  url: www.schoenwald-media.de
   github: schoenwaldnils
   codepen: schoenwaldnils
   gravatar: http://www.gravatar.com/avatar/ddd025871fb3f8225031a011d5d7b08c?s=200
   latlon:
-    - 53.553407
-    - 9.992196
+    - 53.561475
+    - 10.049352
   
 - name: Olly
   twitter: /0x04
