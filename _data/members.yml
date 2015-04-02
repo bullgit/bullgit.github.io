@@ -8,7 +8,7 @@
   latlon:
     - 53.553407
     - 9.992196
-  
+
 - name: Tim
   twitter: timpietrusky
   url: timpietrusky.com
@@ -18,7 +18,7 @@
   latlon:
     - 50.1109221
     - 8.6821267
-  
+
 - name: Kevin
   twitter: _kevinatari
   url: kevingimbel.com
@@ -28,7 +28,7 @@
   latlon:
     - 50.0123996
     - 8.4217125
-  
+
 - name: Max
   twitter: MyXoToD
   url: myxotod.com
@@ -38,7 +38,7 @@
   latlon:
     - 49.9928617
     - 8.2472526
-  
+
 - name: Luky
   twitter: LukyVj
   url: lucasbonomi.com
@@ -48,7 +48,7 @@
   latlon:
     - 48.8603445
     - 2.30573760
-  
+
 - name: Felix
   twitter: dervondenbergen
   url: https://demont.is
@@ -59,7 +59,7 @@
   latlon:
     - 48.2081743
     - 16.3738189
-  
+
 - name: Kanu
   twitter: kmandalwala
   url: seebeetee.com
@@ -69,17 +69,18 @@
   latlon:
     - 22.3038945
     - 70.8021599
-  
+
 - name: Nils
   twitter: schoenwaldnils
   url: www.schoenwald-media.de
   github: schoenwaldnils
   codepen: schoenwaldnils
   gravatar: http://www.gravatar.com/avatar/ddd025871fb3f8225031a011d5d7b08c?s=200
+  title: Junior Beard Developer
   latlon:
     - 53.561475
     - 10.049352
-  
+
 - name: Olly
   twitter: /0x04
   url: 0x04.de
@@ -89,7 +90,7 @@
   latlon:
     - 47.8966802
     - 10.4151477
-  
+
 - name: Nick
   twitter: shvelo96
   url: pirrate.me
@@ -99,7 +100,7 @@
   latlon:
     - 41.716667
     - 44.783333
-  
+
 - name: Ty
   twitter: TyBpa
   url: tystrong.me
@@ -109,7 +110,7 @@
   latlon:
     - 39.440336
     - -84.3621634
-  
+
 - name: José
   twitter: jofpin
   url: mrjopino.com
@@ -119,7 +120,7 @@
   latlon:
     - 4.598056
     - -74.075833
-  
+
 - name: Leeroyd
   twitter: leeroydl
   url: leeroyd.com
@@ -129,7 +130,7 @@
   latlon:
     - 48.856614
     - 2.3522219
-  
+
 - name: Tim
   twitter: tbogdanov80
   url: timbog80.github.io
@@ -139,7 +140,7 @@
   latlon:
     - 45.815115
     - -122.7426009
-  
+
 - name: Clément
   twitter: jQzzzz
   url: clement-galidie.fr
@@ -149,7 +150,7 @@
   latlon:
     - 48.861417
     - 2.536463
-    
+
 - name: Haroen
   twitter: haroenv
   url: haroenv.github.io
