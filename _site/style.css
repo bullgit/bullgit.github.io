@@ -1,0 +1,119 @@
+@import url('http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+
+@font-face {
+    font-family: 'Collegiate';
+    src: url('font/collegia-webfont.eot');
+    src: url('font/collegia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/collegia-webfont.woff') format('woff'),
+         url('font/collegia-webfont.ttf') format('truetype'),
+         url('font/collegia-webfont.svg#collegiateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'bullgit';
+	src:url('font/bullgit.eot');
+	src:url('font/bullgit.eot?#iefix') format('embedded-opentype'),
+		url('font/bullgit.woff') format('woff'),
+		url('font/bullgit.ttf') format('truetype'),
+		url('font/bullgit.svg#bullgit') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.icon-github, .icon-twitter, .icon-confused, .icon-lab, .icon-arrow-down, .icon-bubbles {
+	font-family: 'bullgit';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-github:before {
+	content: "\e000";
+}
+.icon-twitter:before {
+	content: "\e001";
+}
+.icon-confused:before {
+	content: "\e002";
+}
+.icon-lab:before {
+	content: "\e003";
+}
+.icon-arrow-down:before {
+	content: "\e004";
+}
+
+.icon-bubbles:before {
+	content: "\e005";
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+body {
+	padding: 3.5em 1em;
+	color: #000;
+	font-family: 'Collegiate', sans-serif;
+}
+body:after {
+	content: "";
+	position: fixed;
+	bottom: -50px;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	box-shadow: 0px 0px 25px 50px #fff;
+	z-index: 999;
+}
+header, .content {
+	max-width: 800px;
+	margin: auto;
+}
+h1 {
+	font-size: 10.625em ;
+	text-align: center;
+	margin-bottom: 0.25em;
+}
+h2 {
+	font-size: 5em;
+	text-align: center;
+	margin-bottom: 2.5em;
+}
+h3 {
+	font-size: 5em;
+	border-bottom: 5px solid #000;
+	margin: 1.5em 0 0.25em 0;
+}
+h3 i {
+	font-size: 0.8em;
+}
+mark {
+	color: #1393d5;
+	background: none;
+}
+p, li {
+	font-size: 3em;
+	line-height: 1.2em;
+}
+.text-center {
+	text-align: center;
+}
+a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #1393d5;
+}
+footer {
+	margin-top: 10em;
+	text-align: center;
+}

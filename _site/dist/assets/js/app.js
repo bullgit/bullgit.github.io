@@ -1,0 +1,1 @@
+setTimeout(function(){$(document).ready(function(){function a(a,e,n){var s=$(a),t=e,o=n;s.on("click",function(){var a=$("body");a.hasClass(t)?(a.removeClass(t),a.addClass(o)):(a.addClass(t),a.removeClass(o),$(this).attr("data-enabled",t))})}a("#toggleTheme","original","next")})},1e3);
