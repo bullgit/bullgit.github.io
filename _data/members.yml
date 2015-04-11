@@ -191,3 +191,12 @@
   latlon:
     - 51.406638
     - -0.299850
+
+- name: pixelass
+  twitter: GregorAdams
+  url: pixelass.com
+  github: pixelass
+  gravatar: http://www.gravatar.com/avatar/1df167f8d2feea4676febb16c60f5f8f.jpg
+  latlon:
+    - 53.583860
+    - 9.99069
