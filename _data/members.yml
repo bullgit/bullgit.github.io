@@ -196,7 +196,15 @@
   twitter: GregorAdams
   url: pixelass.com
   github: pixelass
+  codepen: pixelass
   gravatar: http://www.gravatar.com/avatar/1df167f8d2feea4676febb16c60f5f8f?s=460
   latlon:
     - 53.583860
     - 9.99069
+
+- name: Hornebom
+  twitter: hornebom
+  url: hornebom.com
+  github: hornebom
+  codepen: Hornebom
+  gravatar: https://avatars2.githubusercontent.com/u/7050932?v=3&s=460
