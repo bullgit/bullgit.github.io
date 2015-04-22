@@ -24,7 +24,8 @@ To add members add a new entry to the [_data/members.yml](https://github.com/bul
   url: url of main page
   github: username on github
   codepen: username on codepen
-  gravatar: link to image with s=200
+  gravatar: link to image with s=460
+  email: your preferred (==@bullg.it) email address
   title: bullshit job title of the gitch
   latlon:
     - latitude of place of gitch
