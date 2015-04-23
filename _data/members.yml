@@ -217,3 +217,13 @@
   latlon:
     - 51.95582
     - 7.64395
+
+- name: Nika
+  twitter: nikazawila
+  url: nikazawila.com
+  github: nikazawila
+  codepen: nikazawila
+  gravatar: https://avatars0.githubusercontent.com/u/9191638?v=3&s=460
+  latlon:
+    - 52.5513466
+    - 13.3766368
