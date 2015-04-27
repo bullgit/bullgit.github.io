@@ -273,12 +273,13 @@ a {
     }
 
     .social {
-        width:8em;
-        margin:.5em auto;
+        display: flex;
+        justify-content: space-around;
+        margin: 0.8em 1em;
         a {
             color:#fff;
             font-size:1.5em;
-            margin:0 .2em;
+            flex-basis: 1em;
             &:hover {
                 color:$color--main;
             }
