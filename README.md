@@ -6,6 +6,7 @@
 ### For the contributorish gitches
 - git clone <repo-url>
 - `cd path/to/project`
+- install jekyll if needed: `gem install jekyll`
 - `jekyll serve / watch`
 
 ### Name
