@@ -10,7 +10,7 @@ layout: nil
       "github": "{{ member.github }}",
       "codepen": "{{ member.codepen }}",
       "email": "{{ member.email }}",
-      "gravatar": "{{ member.gravatar }}"
+      "gravatar": "{{ member.gravatar }}",
       "title": "{{ member.title }}"{% if member.latlon %},
       "latlon": [{{ member.latlon[0] }}, {{ member.latlon[1] }}]{% endif %}
     }{% if forloop.last %}{% else %},{% endif %}
