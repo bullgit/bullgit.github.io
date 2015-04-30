@@ -3,6 +3,11 @@
 
 ## documentation
 
+### For the contributorish gitches
+- git clone <repo-url>
+- `cd path/to/project`
+- `jekyll serve / watch`
+
 ### Name
 
 **bullgit** has only one name which is **bullgit**.
