@@ -1,57 +1,59 @@
 <footer class="site--footer">
-<section class="featured--wrap" id="members">
+	<section class="featured--wrap" id="members">
 
-    {% for member in site.data.members %}
-    <div class="group--member">
-        <a href="http://twitter.com/{{ member.twitter }}">
-            <img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}">
-        </a>
-        <h4>{{ member.name }}</h4>
-        <div class="social">
-            {% if member.url %}<a href="http://{{ member.url }}" class="genericon-link"></a>{% endif %}
-            {% if member.github %}<a href="http://github.com/{{ member.github }}" class="genericon-github"></a>{% endif %}
-            {% if member.codepen %}<a href="http://codepen.io/{{ member.codepen }}" class="genericon-codepen"></a>{% endif %}
-            {% if member.email %}<a href="mailto:{{ member.email }}" class="genericon-mail"></a>{% endif %}
-        </div>
-    </div>
-    {% endfor %}
-</section>
+		{% for member in site.data.members %}
+		<div class="group--member">
+			<a href="http://twitter.com/{{ member.twitter }}">
+				<img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}">
+			</a>
+			<h4>{{ member.name }}</h4>
+			<div class="social">
+				{% if member.url %}<a href="http://{{ member.url }}" class="genericon-link"></a>{% endif %}
+				{% if member.github %}<a href="http://github.com/{{ member.github }}" class="genericon-github"></a>{% endif %}
+				{% if member.codepen %}<a href="http://codepen.io/{{ member.codepen }}" class="genericon-codepen"></a>{% endif %}
+				{% if member.email %}<a href="mailto:{{ member.email }}" class="genericon-mail"></a>{% endif %}
+			</div>
+		</div>
+		{% endfor %}
+	</section>
 </footer>
 <script type="text/javascript">
 // Add a script element as a child of the body
 function downloadJSAtOnload() {
-var element = document.createElement('script');
-element.src = 'assets/js/main.min.js';
-document.body.appendChild(element);
+	var element = document.createElement('script');
+	element.src = 'assets/js/main.min.js';
+	document.body.appendChild(element);
 }
 
 // Check for browser support of event handling capability
 if (window.addEventListener) {
-window.addEventListener("load", downloadJSAtOnload, false);
+	window.addEventListener("load", downloadJSAtOnload, false);
 } else if (window.attachEvent) {
-window.attachEvent("onload", downloadJSAtOnload);
+	window.attachEvent("onload", downloadJSAtOnload);
 } else {
-window.onload = downloadJSAtOnload;
+	window.onload = downloadJSAtOnload;
 }
 </script>
 
 <!-- konami code -->
 <script src="https://cdn.rawgit.com/snaptortoise/konami-js/master/konami.js"></script>
 <script>
-  function loadcss(url) {
-    var head = document.getElementsByTagName('head')[0],
-    link = document.createElement('link');
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
-    link.href = url;
-    Array.prototype.forEach.call(socialicons, function (icon) {
-        icon.setAttribute('style', 'font-family: Genericons !important');
-    });
-    head.appendChild(link);
-    return link;
-  }
-
-  var easter_egg = new Konami(function() {loadcss('https://cdn.rawgit.com/bullgit/comic-sans-it/compatible/style.css');} );
+	function loadcss(url) {
+		var head = document.getElementsByTagName('head')[0],
+		link = document.createElement('link');
+		link.type = 'text/css';
+		link.rel = 'stylesheet';
+		link.href = url;
+		head.appendChild(link);
+		return link;
+	}
+	function cssSwitch() {
+		loadcss('https://cdn.rawgit.com/bullgit/comic-sans-it/compatible/style.css');
+		Array.prototype.forEach.call(socialicons, function (icon) {
+			icon.setAttribute('style', 'font-family: Genericons !important');
+		});
+	}
+	var easter_egg = new Konami(cssSwitch());
 </script>
 </body>
 </html>
