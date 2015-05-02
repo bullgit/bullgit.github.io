@@ -44,9 +44,13 @@ window.onload = downloadJSAtOnload;
     link.type = 'text/css';
     link.rel = 'stylesheet';
     link.href = url;
+    Array.prototype.forEach.call(socialicons, function (icon) {
+        icon.setAttribute('style', 'font-family: Genericons !important');
+    });
     head.appendChild(link);
     return link;
   }
+
   var easter_egg = new Konami(function() {loadcss('https://cdn.rawgit.com/bullgit/comic-sans-it/compatible/style.css');} );
 </script>
 </body>
