@@ -229,3 +229,13 @@
   latlon:
     - 52.5513466
     - 13.3766368
+    
+- name: Ronan
+  twitter: ronanlevesque
+  url: ronanlevesque.fr
+  github: ronanlevesque
+  codepen: eskiiss
+  gravatar: https://avatars2.githubusercontent.com/u/2734671?v=3&s=96
+  latlon:
+    - 48.891234
+    - 2.351230
