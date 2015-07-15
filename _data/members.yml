@@ -54,7 +54,7 @@
 
 - name: Felix
   twitter: dervondenbergen
-  url: https://demont.is
+  url: 'https://demont.is'
   github: dervondenbergen
   codepen: dervondenbergen
   email: felix@bullg.it
