@@ -239,3 +239,13 @@
   latlon:
     - 48.891234
     - 2.351230
+
+- name: Felix Yadomi
+  twitter: felixyadomi
+  url: yadomilabs.com
+  github: yadomi
+  codepen: yadomi
+  gravatar: https://avatars2.githubusercontent.com/yadomi?&s=460
+  latlon:
+    - 48.861417
+    - 2.536463
