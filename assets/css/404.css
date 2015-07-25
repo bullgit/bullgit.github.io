@@ -16,6 +16,13 @@ body a {
 body p {
   text-align: center;
 }
+body ul {
+  text-align: center;
+}
+body li {
+  display: inline-block;
+  margin: 1rem;
+}
 @media all and (max-width: 40em) {
   body {
     font-size: 1.4em;
