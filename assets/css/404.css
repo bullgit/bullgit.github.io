@@ -13,10 +13,7 @@ body {
 body a {
   color: inherit;
 }
-body p {
-  text-align: center;
-}
-body ul {
+body p, body ul {
   text-align: center;
 }
 body li {
