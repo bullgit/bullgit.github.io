@@ -13,8 +13,12 @@ body {
 body a {
   color: inherit;
 }
-body p {
+body p, body ul {
   text-align: center;
+}
+body li {
+  display: inline-block;
+  margin: 1rem;
 }
 @media all and (max-width: 40em) {
   body {
