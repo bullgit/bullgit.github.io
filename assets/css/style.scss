@@ -1,4 +1,4 @@
-@import "compass";
+// @import "compass";
 // @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
 @import "font/genericons/genericons.css";
 
@@ -23,10 +23,21 @@ $color--light: #f1f1f1;
 
 $color--target: #ff6347;
 
+$color--dark-background: #444;
+$color--darker-background: #222;
+$color--light-background: #eaeaea;
+
+html {
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
     padding: 0;
-    @include box-sizing(border-box);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -115,7 +126,7 @@ a {
 
     .nav--list-item {
         display: inline-block;
-        margin-left: 2.5em;
+        margin-left: 1.4em;
 
         @include breakpoint(small) {
             margin: 1.5em .5em;
@@ -136,7 +147,7 @@ a {
     width: 100%;
     height: auto;
     padding:5em;
-    @include background(linear-gradient(#222,#444));
+    @include gradient(top,$color--darker-background,$color--dark-background);
 }
 
 
@@ -144,7 +155,8 @@ a {
     background: #fff;
     padding:1.5em;
 
-    @include border-radius(3px);
+    border-radius: 3px;
+    //@include border-radius(3px); //DONE
 
     h2 {
         color: $color--main;
@@ -218,12 +230,17 @@ a {
 }
 
 .project {
-    background: #eaeaea;
+    background: $color--light-background;
 
     h3 {
         padding:1em 1em 0 1em;
         font-size: 1.6em;
-        @include word-break(break-all);
+        word-wrap: break-word;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+        //@include word-break(break-all); //DONE
     }
 
     p {
@@ -252,17 +269,24 @@ a {
         height: auto;
         margin-bottom: .5em;
 
-        @include border-radius(100%);
-        @include transition(all ease-in-out .2s);
+        border-radius: 100%;
+        // @include border-radius(100%); //DONE
+        -webkit-transition: all ease-in-out .2s;
+        transition: all ease-in-out .2s;
+        // @include transition(all ease-in-out .2s); //DONE
 
         &:hover {
             border:.5em solid $color--main;
-            @include transition(all ease-in-out .2s);
+            -webkit-transition: all ease-in-out .2s;
+            transition: all ease-in-out .2s;
+            // @include transition(all ease-in-out .2s); //DONE
         }
 
         &:target {
             border:.5em solid $color--target;
-            @include transition(all ease-in-out .3s);
+            -webkit-transition: all ease-in-out .3s;
+            transition: all ease-in-out .3s;
+            // @include transition(all ease-in-out .3s); //DONE
         }
     }
 
