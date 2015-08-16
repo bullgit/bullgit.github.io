@@ -2,16 +2,27 @@
     @-webkit-keyframes $animation_name {
         @content;
     }
- 
+
     @-moz-keyframes $animation_name {
         @content;
     }
- 
+
     @-o-keyframes $animation_name {
         @content;
     }
- 
+
     @keyframes $animation_name {
         @content;
     }
+}
+
+@mixin gradient ($direction, $first-colour, $second-colour) {
+    background: $first-colour;
+    background: -moz-linear-gradient($direction, $first-colour 0%, $second-colour 100%);
+    background: -webkit-gradient(linear, left $direction, left bottom, color-stop(0%,$first-colour), color-stop(100%,$second-colour));
+    background: -webkit-linear-gradient($direction, $first-colour 0%,$second-colour 100%);
+    background: -o-linear-gradient($direction, $first-colour 0%,$second-colour 100%);
+    background: -ms-linear-gradient($direction, $first-colour 0%,$second-colour 100%);
+    background: linear-gradient(to bottom, $first-colour 0%,$second-colour 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first-colour', endColorstr='$second-colour',GradientType=0 );
 }
