@@ -249,3 +249,13 @@
   latlon:
     - 48.861417
     - 2.536463
+
+- name: Victor
+  twitter: victormours
+  url: github.com/victormours/dotfiles
+  github: victormours
+  codepen: victormours
+  gravatar: https://avatars2.githubusercontent.com/victormours?&s=460
+  latlon:
+    - 48.880744
+    - 2.382808
