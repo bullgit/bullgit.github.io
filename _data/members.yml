@@ -199,17 +199,6 @@
     - 51.406638
     - -0.299850
 
-- name: pixelass
-  twitter: GregorAdams
-  url: http://pixelass.com
-  github: pixelass
-  title: box-model
-  codepen: pixelass
-  gravatar: https://www.gravatar.com/avatar/1df167f8d2feea4676febb16c60f5f8f?s=460
-  latlon:
-    - 53.583860
-    - 9.99069
-
 - name: Hornebom
   twitter: hornebom
   url: http://hornebom.com
