@@ -249,3 +249,14 @@
   latlon:
     - 48.880744
     - 2.382808
+
+- name: Michael
+  twitter: mkuehnel
+  url: http://michael-kuehnel.de
+  github: mischah
+  email: mail@michael-kuehnel.de
+  title: Inhouse Hashtag Manager (IHM)
+  gravatar: https://de.gravatar.com/userimage/20290925/c39e4390de871496acfae09ed9d618b5.jpg?size=460
+  latlon:
+    - 51.3131600
+    - 9.4597700
