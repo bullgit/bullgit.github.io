@@ -1,5 +1,4 @@
 ---
-layout: nil
 ---
 {
   "gitches": [{% for member in site.data.members %}
