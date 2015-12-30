@@ -1,12 +1,12 @@
 {% include header.html %}
 
+{% assign repos = site.github.public_repositories | sort: 'created_at' | reverse %}
 
 <section class="featured--wrap" data-js="featured-project">
-  {% assign featured = site.github.public_repositories | last %}
-  {% assign featured = site.github.public_repositories | last %}
+  {% assign featured = repos | first %}
   <article class="content--wrap  featured--article">
     <h2>
-      <a href="{{ featured.html_url }}">{{featured.name}}</a> 
+      <a href="{{ featured.html_url }}">{{featured.name}}</a>
     </h2>
     <p>{{ featured.description }}</p>
   </article>
@@ -15,7 +15,7 @@
 <div class="content--wrap">
 <section class="gw" data-js="old-projects">
     <article class="g one-half  medium-one-whole  small-one-whole" data-column="1">
-    {% for r1 in site.github.public_repositories reversed %}
+    {% for r1 in repos %}
       {% assign r1i = forloop.index0 | modulo:2 %}
       {% if r1i == 1 %}
       <article class="project">
@@ -28,7 +28,7 @@
     {% endfor %}
     </article>
     <article class="g one-half  medium-one-whole  small-one-whole" data-column="2">
-    {% for r2 in site.github.public_repositories reversed %}
+    {% for r2 in repos %}
       {% if forloop.index0 == 0 %}
         {% continue %}
       {% endif %}
