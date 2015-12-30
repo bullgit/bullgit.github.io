@@ -616,7 +616,7 @@ a {
       text-align: center; } }
   .site--navigation .nav--list-item {
     display: inline-block;
-    margin-left: 1.4em; }
+    margin-left: 0.6em; }
     @media all and (max-width: 30em) {
       .site--navigation .nav--list-item {
         margin: 1.5em .5em; } }
