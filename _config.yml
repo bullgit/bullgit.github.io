@@ -6,3 +6,6 @@ layouts: ./_layouts
 # defining permalinks
 permalink: :title
 paginate_path: 'page:num'
+repository: bullgit/bullgit.github.io
+gems:
+  - 'jekyll-github-metadata'
