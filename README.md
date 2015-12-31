@@ -7,6 +7,7 @@
 - git clone <repo-url>
 - `cd path/to/project`
 - install jekyll if needed: `gem install jekyll`
+  - for the homepage repo list: `gem install jekyll-github-metadata` 
 - `jekyll serve / watch`
 
 ### Name
