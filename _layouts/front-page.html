@@ -8,10 +8,10 @@
     <h2>
       <a href="{{ featured.html_url }}">{{featured.name}}</a>
       {% if featured.has_pages %}
-        <a href="https://bullg.it/{{ featured.name }}">🌐</a>
+        <a href="https://bullg.it/{{ featured.name }}" class="emoji">🌐</a>
       {% else %}
         {% if featured.homepage.size > 0 %}
-        <a href="{{featured.homepage}}">🌐</a>
+        <a href="{{featured.homepage}}" class="emoji">🌐</a>
         {% endif %}
       {% endif %}
     </h2>
@@ -29,11 +29,11 @@
         <h3 class="project--headline">
           <a href="{{ r1.html_url }}">{{ r1.name }}</a>
           {% if r1.has_pages %}
-            <a href="https://bullg.it/{{ r1.name }}">🌐</a>
+            <a href="https://bullg.it/{{ r1.name }}" class="emoji">🌐</a>
           {% else %}
             {% if r1.homepage.size > 0 %}
             {{r1.homepage.size}}
-            <a href="{{r1.homepage}}">🌐</a>
+            <a href="{{r1.homepage}}" class="emoji">🌐</a>
             {% endif %}
           {% endif %}
         </h3>
