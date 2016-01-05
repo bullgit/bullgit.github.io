@@ -7,6 +7,13 @@
   <article class="content--wrap  featured--article">
     <h2>
       <a href="{{ featured.html_url }}">{{featured.name}}</a>
+      {% if featured.has_pages %}
+        <a href="https://bullg.it/{{ featured.name }}">🌐</a>
+      {% else %}
+        {% if featured.homepage.size > 0 %}
+        <a href="{{featured.homepage}}">🌐</a>
+        {% endif %}
+      {% endif %}
     </h2>
     <p>{{ featured.description }}</p>
   </article>
@@ -21,6 +28,14 @@
       <article class="project">
         <h3 class="project--headline">
           <a href="{{ r1.html_url }}">{{ r1.name }}</a>
+          {% if r1.has_pages %}
+            <a href="https://bullg.it/{{ r1.name }}">🌐</a>
+          {% else %}
+            {% if r1.homepage.size > 0 %}
+            {{r1.homepage.size}}
+            <a href="{{r1.homepage}}">🌐</a>
+            {% endif %}
+          {% endif %}
         </h3>
         <p>{{ r1.description }}</p>
       </article>
@@ -37,6 +52,14 @@
       <article class="project">
         <h3 class="project--headline">
           <a href="{{ r2.html_url }}">{{ r2.name }}</a>
+          {% if r2.has_pages %}
+            <a href="https://bullg.it/{{ r2.name }}">🌐</a>
+          {% else %}
+            {% if r2.homepage.size > 0 %}
+            {{r2.homepage.size}}
+            <a href="{{r2.homepage}}">🌐</a>
+            {% endif %}
+          {% endif %}
         </h3>
         <p>{{ r2.description }}</p>
       </article>
