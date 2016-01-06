@@ -7,11 +7,11 @@
   <article class="content--wrap  featured--article">
     <h2>
       <a href="{{ featured.html_url }}">{{featured.name}}</a>
-      {% if featured.has_pages %}
-        <a href="https://bullg.it/{{ featured.name }}" class="emoji">🌐</a>
-      {% else %}
-        {% if featured.homepage.size > 0 %}
+      {% if featured.homepage.size > 0%}
         <a href="{{featured.homepage}}" class="emoji">🌐</a>
+      {% else %}
+        {% if featured.has_pages %}
+        <a href="https://bullg.it/{{ featured.name }}" class="emoji">🌐</a>
         {% endif %}
       {% endif %}
     </h2>
@@ -28,11 +28,11 @@
       <article class="project">
         <h3 class="project--headline">
           <a href="{{ r1.html_url }}">{{ r1.name }}</a>
-          {% if r1.has_pages %}
-            <a href="https://bullg.it/{{ r1.name }}" class="emoji">🌐</a>
-          {% else %}
-            {% if r1.homepage.size > 0 %}
+          {% if r1.homepage.size > 0%}
             <a href="{{r1.homepage}}" class="emoji">🌐</a>
+          {% else %}
+            {% if r1.has_pages %}
+            <a href="https://bullg.it/{{ r1.name }}" class="emoji">🌐</a>
             {% endif %}
           {% endif %}
         </h3>
@@ -51,11 +51,11 @@
       <article class="project">
         <h3 class="project--headline">
           <a href="{{ r2.html_url }}">{{ r2.name }}</a>
-          {% if r2.has_pages %}
-            <a href="https://bullg.it/{{ r2.name }}">🌐</a>
+          {% if r2.homepage.size > 0%}
+            <a href="{{r2.homepage}}" class="emoji">🌐</a>
           {% else %}
-            {% if r2.homepage.size > 0 %}
-            <a href="{{r2.homepage}}">🌐</a>
+            {% if r2.has_pages %}
+            <a href="https://bullg.it/{{ r2.name }}" class="emoji">🌐</a>
             {% endif %}
           {% endif %}
         </h3>
