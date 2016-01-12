@@ -1,7 +1,7 @@
 # the basic jekyll setup
 source: .
 destination: ./_site
-layouts: ./_layouts
+layouts_dir: ./_layouts
 
 # defining permalinks
 permalink: :title
