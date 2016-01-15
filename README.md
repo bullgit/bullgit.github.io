@@ -1,14 +1,14 @@
 [bullgit.github.io](http://bullg.it "Go to bullgit")
 =================
 
-## documentation
+## Documentation
 
 ### For the contributorish gitches
 - git clone <repo-url>
 - `cd path/to/project`
 - install jekyll if needed: `gem install jekyll`
   - for the homepage repo list: `gem install jekyll-github-metadata` 
-- `jekyll serve / watch`
+- `jekyll serve` or `jekyll serve --watch `
 
 ### Name
 
