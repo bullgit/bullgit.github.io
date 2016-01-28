@@ -242,7 +242,6 @@ a {
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
-        //@include word-break(break-all); //DONE
     }
 
     p {
@@ -320,4 +319,12 @@ a {
 
 .emoji {
     font-weight: normal;
+}
+
+.stars {
+    float: right;
+
+    &:after {
+        content: '★';
+    }
 }
