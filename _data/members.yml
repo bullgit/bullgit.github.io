@@ -260,3 +260,14 @@
   latlon:
     - 51.3131600
     - 9.4597700
+
+- name: Johannes
+  twitter: JohJakob
+  url: http://johjakob.de
+  github: JohJakob
+  codepen: JohJakob
+  email: johannes.jakob@elg-halle.de
+  gravatar: https://avatars2.githubusercontent.com/u/9888537?v=3&s=460
+  latlon:
+    - 51.510738
+    - 11.994144
