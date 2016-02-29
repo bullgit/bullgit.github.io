@@ -156,9 +156,8 @@ a {
 .featured--article {
   background: #fff;
   padding:1.5em;
-
-  border-radius: 3px;
-  //@include border-radius(3px); //DONE
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
 
   h2 {
     color: $color--main;
