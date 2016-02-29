@@ -13,15 +13,15 @@ _paq.push(['enableLinkTracking']);
 // search
 window.addEventListener('DOMContentLoaded',function(){
   var search = document.querySelector('.search input');
-  var courseNames = document.querySelectorAll('.project--headline a:not(.emoji)');
-  var courseDescriptions = document.querySelectorAll('.project p');
+  var projectNames = document.querySelectorAll('.project--headline a:not(.emoji)');
+  var projectDescriptions = document.querySelectorAll('.project p');
 
   search.addEventListener('input',function(){
-    for (var i = 0; i < courseNames.length; i++) {
-      if (courseNames[i].innerHTML.toLowerCase().indexOf(search.value.toLowerCase()) === -1 && courseDescriptions[i].innerHTML.toLowerCase().indexOf(search.value.toLowerCase()) === -1) {
-        courseNames[i].parentNode.parentNode.classList.add('hidden');
+    for (var i = 0; i < projectNames.length; i++) {
+      if (projectNames[i].innerHTML.toLowerCase().indexOf(search.value.toLowerCase()) === -1 && projectDescriptions[i].innerHTML.toLowerCase().indexOf(search.value.toLowerCase()) === -1) {
+        projectNames[i].parentNode.parentNode.classList.add('hidden');
       } else {
-        courseNames[i].parentNode.parentNode.classList.remove('hidden');
+        projectNames[i].parentNode.parentNode.classList.remove('hidden');
       }
     };
   });
