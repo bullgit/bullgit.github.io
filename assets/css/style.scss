@@ -322,6 +322,8 @@ a {
   font-weight: normal;
 }
 
+$color--text: black;
+
 .search {
   display: -webkit-flex;
   display: -moz-flex;
@@ -337,15 +339,15 @@ a {
     padding: .2em;
     padding-right: 0;
     border: 0;
-    box-shadow: $text 0 0 0 1px inset;
+    box-shadow: $color--text 0 0 0 1px inset;
     width: 100%;
-    color: $text;
+    color: $color--text;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 
     &:focus {
-      box-shadow: $text 0 0 0 2px inset;
+      box-shadow: $color--text 0 0 0 2px inset;
       outline: none;
     }
   }
