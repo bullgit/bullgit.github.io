@@ -321,3 +321,36 @@ a {
 .emoji {
   font-weight: normal;
 }
+
+.search {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+
+  input {
+    font-size: 3em;
+    border-radius: .2em;
+    padding: .2em;
+    padding-right: 0;
+    border: 0;
+    box-shadow: $text 0 0 0 1px inset;
+    width: 100%;
+    color: $text;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:focus {
+      box-shadow: $text 0 0 0 2px inset;
+      outline: none;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
