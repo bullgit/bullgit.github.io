@@ -321,7 +321,7 @@ a {
   font-weight: normal;
 }
 
-$color--text: black;
+$color--text: #eaeaea;
 
 .search {
   display: -webkit-flex;
@@ -333,13 +333,13 @@ $color--text: black;
   padding: 1em 0;
 
   input {
-    font-size: 3em;
+    font-size: 2em;
     border-radius: .2em;
     padding: .2em;
     border: 0;
     box-shadow: $color--text 0 0 0 1px inset;
     width: 100%;
-    color: $color--text;
+    color: black;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
