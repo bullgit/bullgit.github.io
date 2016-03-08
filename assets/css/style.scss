@@ -133,6 +133,17 @@ a {
   }
 }
 
+
+.navigation {
+  @media (max-width: 860px) {
+    width: 100%;
+    text-align: center;
+    .site--navigation {
+      float:none;
+      text-align: center;
+    }
+  }
+}
 .site--navigation {
   float: right;
   margin-top: 3em;
@@ -151,7 +162,29 @@ a {
     }
   }
 }
+  @media (max-width: 860px) {
+    .brand {
+      width: 100%;
+    }
+    .site--header .site--headline {
+      display: block;
+      padding: 0 0 0 .7em;
+      margin-top: 1em;
+      text-align: center;
 
+      &:before {
+        top: -2em;
+        left: 50%;
+        margin-left: -1em;
+      }
+    }
+    .site--header h2 {
+      display: block;
+      width: 100%;
+      padding: 0 0 0 1em;
+      text-align: center;
+    }
+  }
 
 .content--wrap {
   width: 100%;
@@ -272,7 +305,7 @@ a {
   border-radius: 3px;
 
   h3 {
-    padding:1em 1em 0 1em;
+    padding: 1em 1em 0 0.65em;
     font-size: 1.6em;
     word-wrap: break-word;
     -moz-hyphens: auto;
