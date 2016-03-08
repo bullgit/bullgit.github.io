@@ -25,17 +25,21 @@ $color--light: #f1f1f1;
 
 $color--target: #ff6347;
 
+$color--background: #F3F4F7;
 $color--dark-background: #444;
 $color--darker-background: #222;
-$color--light-background: #eaeaea;
+$color--light-background: #fff;
 
 html {
   box-sizing: border-box;
+  background: linear-gradient(to bottom, #fffffff, red);
 }
 
 * {
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscaled;
 }
 
 *, *:before, *:after {
@@ -46,7 +50,7 @@ body {
   font-size: 1rem;
   line-height: 1.3;
   // font-family: 'Josefin Sans', sans-serif;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -74,6 +78,9 @@ a {
 */
 
 .site--header {
+  > div {
+    height: 72px;
+  }
   .site--headline {
     position: relative;
     padding-left:2.5em;
@@ -116,10 +123,19 @@ a {
   }
 }
 
+.content--holder {
+  background: $color--background;
+  float: left;
+  width: 100%;
+
+  &:nth-child(1) {
+    background: linear-gradient(#fff, darken($color--background, 5%));
+  }
+}
 
 .site--navigation {
   float: right;
-  margin-top: 2em;
+  margin-top: 3em;
 
   @include breakpoint(small) {
     float:none;
@@ -138,10 +154,21 @@ a {
 
 
 .content--wrap {
-  width:100%;
-  max-width:50em;
-  height:auto;
-  margin:2.5em auto;
+  width: 100%;
+  max-width: 60em;
+  height: auto;
+  margin: 2.5em auto;
+
+  // Hero section
+  &.hero-section {
+    font-weight: 300;
+    text-align: center;
+    padding: 2em 0;
+
+    p {
+      line-height: 26px;
+    }
+  }
 }
 
 
@@ -149,15 +176,22 @@ a {
   width: 100%;
   height: auto;
   padding:5em;
-  @include gradient(top,$color--darker-background,$color--dark-background);
+  float: left;
+  background: linear-gradient(to bottom,$color--darker-background,$color--dark-background);
+
+  &.visual-background {
+    background: linear-gradient(to bottom right, #1393D5, #000),
+    url("../img/section_background.jpg") no-repeat bottom center/100% auto;
+    background-blend-mode: darken;
+  }
 }
 
 
 .featured--article {
   background: #fff;
   padding:1.5em;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+  border-radius: 6px;
+  box-shadow: 0 10px 36px rgba(0,0,0,0.35);
 
   h2 {
     color: $color--main;
@@ -230,8 +264,12 @@ a {
   }
 }
 
+
 .project {
   background: $color--light-background;
+  box-shadow: 0 1px 0 #c5cad8, 0 2px 3px #d4d8e3;
+  border: none;
+  border-radius: 3px;
 
   h3 {
     padding:1em 1em 0 1em;
@@ -265,22 +303,35 @@ a {
   margin: 1em;
   display:inline-block;
 
+  .avatar--wrapper {
+    border-radius: 100%;
+    border: 1px solid rgba(#000, 0.1);
+    max-height: 160px;
+
+    &:hover {
+      img {
+        mix-blend-mode: none;
+        -webkit-filter: none;
+      }
+    }
+  }
+
   img {
     width:100%;
     height: auto;
     margin-bottom: .5em;
 
     border-radius: 100%;
-    // @include border-radius(100%); //DONE
     -webkit-transition: all ease-in-out .2s;
     transition: all ease-in-out .2s;
-    // @include transition(all ease-in-out .2s); //DONE
+    mix-blend-mode: lighten;
 
     &:hover {
       border:.5em solid $color--main;
       -webkit-transition: all ease-in-out .2s;
       transition: all ease-in-out .2s;
-      // @include transition(all ease-in-out .2s); //DONE
+      mix-blend-mode: inherit;
+      -webkit-filter: inherit;
     }
 
     &:target {
@@ -334,18 +385,26 @@ $color--text: #eaeaea;
 
   input {
     font-size: 2em;
-    border-radius: .2em;
-    padding: .2em;
+    border-radius: 3px;
+    padding: .45em;
     border: 0;
-    box-shadow: $color--text 0 0 0 1px inset;
+    box-shadow: 0 1px 0 #c5cad8, 
+    0 2px 3px #d4d8e3, 
+    inset $color--text 0 0 0 1px;
+
     width: 100%;
     color: black;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    margin-bottom: 1.2em;
+    transition: box-shadow 0.3s ease;
 
     &:focus {
-      box-shadow: $color--text 0 0 0 2px inset;
+      box-shadow: 0 2px 3px rgba(#c5cad8, 0.5), 
+      0 4px 8px rgba(#d4d8e3, 0.5), 
+      inset $color--text 0 0 0 2px, 
+      rgba(#000, 0.35) 0 1px 0 0px;
       outline: none;
     }
   }

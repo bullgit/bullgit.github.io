@@ -5,7 +5,7 @@ layout: compress
 
 {% assign repos = site.github.public_repositories | sort: 'created_at' | reverse %}
 
-<section class="featured--wrap" data-js="featured-project">
+<section class="featured--wrap visual-background" data-js="featured-project">
   {% assign featured = repos | first %}
   <article class="content--wrap  featured--article">
     <h2>
@@ -22,57 +22,59 @@ layout: compress
   </article>
 </section>
 
-<div class="content--wrap">
+<div class="content--holder">
+  <div class="content--wrap">
 
-<section class="search">
-    <input type="search" placeholder="search">
-</section>
+  <section class="search">
+      <input type="search" placeholder="search">
+  </section>
 
-<section class="gw" data-js="old-projects">
-    <article class="g one-half  medium-one-whole  small-one-whole" data-column="1">
-    {% for r1 in repos %}
-      {% assign r1i = forloop.index0 | modulo:2 %}
-      {% if r1i == 1 %}
-      <article class="project">
-        <h3 class="project--headline">
-          <a href="{{ r1.html_url }}">{{ r1.name }}</a>
-          {% if r1.homepage.size > 0%}
-            <a href="{{r1.homepage}}" class="emoji" title="{{r1.homepage}}">🌐</a>
-          {% else %}
-            {% if r1.has_pages %}
-            <a href="https://bullg.it/{{ r1.name }}" class="emoji" title="https://bullg.it/{{ r1.name }}">🌐</a>
+  <section class="gw" data-js="old-projects">
+      <article class="g one-half  medium-one-whole  small-one-whole" data-column="1">
+      {% for r1 in repos %}
+        {% assign r1i = forloop.index0 | modulo:2 %}
+        {% if r1i == 1 %}
+        <article class="project">
+          <h3 class="project--headline">
+            <a href="{{ r1.html_url }}">{{ r1.name }}</a>
+            {% if r1.homepage.size > 0%}
+              <a href="{{r1.homepage}}" class="emoji" title="{{r1.homepage}}">🌐</a>
+            {% else %}
+              {% if r1.has_pages %}
+              <a href="https://bullg.it/{{ r1.name }}" class="emoji" title="https://bullg.it/{{ r1.name }}">🌐</a>
+              {% endif %}
             {% endif %}
-          {% endif %}
-        </h3>
-        <p>{{ r1.description }}</p>
+          </h3>
+          <p>{{ r1.description }}</p>
+        </article>
+        {% endif %}
+      {% endfor %}
       </article>
-      {% endif %}
-    {% endfor %}
-    </article>
-    <article class="g one-half  medium-one-whole  small-one-whole" data-column="2">
-    {% for r2 in repos %}
-      {% if forloop.index0 == 0 %}
-        {% continue %}
-      {% endif %}
-      {% assign r2i = forloop.index | modulo:2 %}
-      {% if r2i == 1 %}
-      <article class="project">
-        <h3 class="project--headline">
-          <a href="{{ r2.html_url }}">{{ r2.name }}</a>
-          {% if r2.homepage.size > 0%}
-            <a href="{{r2.homepage}}" class="emoji" title="{{r2.homepage}}">🌐</a>
-          {% else %}
-            {% if r2.has_pages %}
-            <a href="https://bullg.it/{{ r2.name }}" class="emoji" title="https://bullg.it/{{ r2.name }}">🌐</a>
+      <article class="g one-half  medium-one-whole  small-one-whole" data-column="2">
+      {% for r2 in repos %}
+        {% if forloop.index0 == 0 %}
+          {% continue %}
+        {% endif %}
+        {% assign r2i = forloop.index | modulo:2 %}
+        {% if r2i == 1 %}
+        <article class="project">
+          <h3 class="project--headline">
+            <a href="{{ r2.html_url }}">{{ r2.name }}</a>
+            {% if r2.homepage.size > 0%}
+              <a href="{{r2.homepage}}" class="emoji" title="{{r2.homepage}}">🌐</a>
+            {% else %}
+              {% if r2.has_pages %}
+              <a href="https://bullg.it/{{ r2.name }}" class="emoji" title="https://bullg.it/{{ r2.name }}">🌐</a>
+              {% endif %}
             {% endif %}
-          {% endif %}
-        </h3>
-        <p>{{ r2.description }}</p>
+          </h3>
+          <p>{{ r2.description }}</p>
+        </article>
+        {% endif %}
+      {% endfor %}
       </article>
-      {% endif %}
-    {% endfor %}
-    </article>
-</section>
+  </section>
+  </div>
 </div>
 
 {% include footer.html %}
