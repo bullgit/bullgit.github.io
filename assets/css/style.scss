@@ -55,7 +55,7 @@ body {
 }
 
 code {
-    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 
 a {
@@ -137,7 +137,14 @@ a {
   }
 }
 
-
+/* ==================================
+*
+*  NAVIGATION
+*
+*
+*
+* ==================================
+*/
 .navigation {
   @media (max-width: 860px) {
     width: 100%;
@@ -155,6 +162,7 @@ a {
   @include breakpoint(small) {
     float:none;
     text-align: center;
+    font-size: 0.8em;
   }
 
   .nav--list-item {
@@ -162,33 +170,42 @@ a {
     margin-left: 0.6em;
 
     @include breakpoint(small) {
-      margin: 1.5em .5em;
+      margin: 1.5em 0.2em;
     }
   }
 }
-  @media (max-width: 860px) {
-    .brand {
-      width: 100%;
-    }
-    .site--header .site--headline {
-      display: block;
-      padding: 0 0 0 .7em;
-      margin-top: 1em;
-      text-align: center;
+@media (max-width: 860px) {
+  .brand {
+    width: 100%;
+  }
+  .site--header .site--headline {
+    display: block;
+    padding: 0 0 0 .7em;
+    margin-top: 1em;
+    text-align: center;
 
-      &:before {
-        top: -2em;
-        left: 50%;
-        margin-left: -1em;
-      }
-    }
-    .site--header h2 {
-      display: block;
-      width: 100%;
-      padding: 0 0 0 1em;
-      text-align: center;
+    &:before {
+      top: -2em;
+      left: 50%;
+      margin-left: -1em;
     }
   }
+  .site--header h2 {
+    display: block;
+    width: 100%;
+    padding: 0 0 0 1em;
+    text-align: center;
+  }
+}
+
+/* ==================================
+*
+*  CONTENT
+*
+*
+*
+* ==================================
+*/
 
 .content--wrap {
   width: 100%;
@@ -221,6 +238,11 @@ a {
     background: linear-gradient(to bottom right, #1393D5, #000),
     url("../img/section_background.jpg") no-repeat bottom center/100% auto;
     background-blend-mode: darken;
+
+    @include breakpoint(small) {
+      background: linear-gradient(to bottom right, #1393D5, #000),
+      url("../img/section_background.jpg") no-repeat center center / cover;
+    }
   }
 }
 
@@ -239,6 +261,11 @@ a {
   p {
     margin:1em 0 0 0;
     font-size: 1.3em;
+  }
+
+  @include breakpoint(small) {
+    max-width: 92%;
+    margin: 0 4%;
   }
 }
 
@@ -302,6 +329,14 @@ a {
   }
 }
 
+/* ==================================
+*
+*  PROJECTS
+*
+*
+*
+* ==================================
+*/
 
 .project {
   background: $color--light-background;
@@ -324,7 +359,21 @@ a {
     margin:0 0 1em 0;
     padding:1em;
   }
+
+  @include breakpoint(small) {
+    max-width: 92%;
+    margin: 0 4%;
+  }
 }
+
+/* ==================================
+*
+*  FOOTER
+*
+*
+*
+* ==================================
+*/
 
 .site--footer {
   color:$color--light;
@@ -410,6 +459,15 @@ a {
   font-weight: normal;
 }
 
+
+/* ==================================
+*
+*  SEARCH
+*
+*
+*
+* ==================================
+*/
 $color--text: #eaeaea;
 
 .search {
@@ -444,6 +502,12 @@ $color--text: #eaeaea;
       inset $color--text 0 0 0 2px,
       rgba(#000, 0.35) 0 1px 0 0px;
       outline: none;
+    }
+
+
+    @include breakpoint(small) {
+      max-width: 92%;
+      margin: 0 4%;
     }
   }
 }
