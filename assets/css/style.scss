@@ -263,7 +263,7 @@ a {
     font-size: 1.3em;
   }
 
-  @include breakpoint(small){
+  @include breakpoint(small) {
     max-width: 92%;
     margin: 0 4%;
   }
@@ -360,7 +360,7 @@ a {
     padding:1em;
   }
 
-  @include breakpoint(small){
+  @include breakpoint(small) {
     max-width: 92%;
     margin: 0 4%;
   }
@@ -505,7 +505,7 @@ $color--text: #eaeaea;
     }
 
 
-    @include breakpoint(small){
+    @include breakpoint(small) {
       max-width: 92%;
       margin: 0 4%;
     }
