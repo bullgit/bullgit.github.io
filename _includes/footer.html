@@ -1,10 +1,11 @@
 <footer class="site--footer">
 	<section class="featured--wrap" id="members">
-
 		{% for member in site.data.members %}
 		<div class="group--member">
 			<a href="http://twitter.com/{{ member.twitter }}">
-				<img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}">
+				<div class="avatar--wrapper">
+					<img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}">    
+				</div>
 			</a>
 			<h4>{{ member.name }}</h4>
 			<div class="social">
