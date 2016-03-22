@@ -415,7 +415,6 @@ a {
 
     &:hover {
       border:.5em solid $color--main;
-      -webkit-transition: all ease-in-out .2s;
       transition: all ease-in-out .2s;
       mix-blend-mode: inherit;
       -webkit-filter: inherit;
@@ -436,12 +435,18 @@ a {
   }
 
   .social {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 0.8em 1em;
     a {
       color:#fff;
       font-size:1.5em;
+      -webkit-flex-basis: 1em;
+      -ms-flex-preferred-size: 1em;
       flex-basis: 1em;
       &:hover {
         color:$color--main;
@@ -494,6 +499,7 @@ $color--text: #eaeaea;
     -moz-appearance: none;
     appearance: none;
     margin-bottom: 1.2em;
+    -webkit-transition: box-shadow 0.3s ease;
     transition: box-shadow 0.3s ease;
 
     &:focus {
