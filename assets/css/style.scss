@@ -385,13 +385,14 @@ a {
 }
 
 .group--member {
-  width:10em;
-  height:auto;
+  width: 10em;
+  height: auto;
   margin: 1em;
-  display:inline-block;
+  display: inline-block;
 
   .avatar--wrapper {
     border-radius: 100%;
+    overflow: hidden;
     border: 1px solid rgba(#000, 0.1);
     max-height: 160px;
 
@@ -404,11 +405,12 @@ a {
   }
 
   img {
-    width:100%;
+    width: 100%;
     height: auto;
     margin-bottom: .5em;
 
     border-radius: 100%;
+    overflow: hidden;
     -webkit-transition: all ease-in-out .2s;
     transition: all ease-in-out .2s;
     mix-blend-mode: lighten;
@@ -421,7 +423,7 @@ a {
     }
 
     &:target {
-      border:.5em solid $color--target;
+      border: .5em solid $color--target;
       -webkit-transition: all ease-in-out .3s;
       transition: all ease-in-out .3s;
       // @include transition(all ease-in-out .3s); //DONE
@@ -429,7 +431,7 @@ a {
   }
 
   h4 {
-    color:$color--light;
+    color: $color--light;
     text-align: center;
     font-size:1.4em;
   }
