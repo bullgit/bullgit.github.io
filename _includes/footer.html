@@ -4,7 +4,7 @@
 		<div class="group--member">
 			<a href="http://twitter.com/{{ member.twitter }}">
 				<div class="avatar--wrapper">
-					<img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}">    
+					<img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}">
 				</div>
 			</a>
 			<h4>{{ member.name }}</h4>
@@ -19,6 +19,16 @@
 	</section>
 </footer>
 <script src="assets/js/main.js"></script>
+
+<!-- holmes -->
+<script src="https://haroen.me/holmes/js/holmes.js"></script>
+<script>
+  holmes({
+    input: '.search input',
+    find: '.project',
+    placeholder: 'no 💩 found, suggest some!',
+  });
+</script>
 
 <!-- konami code -->
 <script src="https://cdn.rawgit.com/snaptortoise/konami-js/master/konami.js"></script>
