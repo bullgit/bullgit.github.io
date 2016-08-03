@@ -10,3 +10,6 @@ gems:
 # other settings
 sass:
     style: compressed
+
+# Exclude
+exclude: [vendor]
