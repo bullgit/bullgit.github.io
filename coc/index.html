@@ -1,7 +1,70 @@
 ---
 layout: compress
 ---
-{% include header.html %}
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+  <title>{% if page.title %} {{ page.title }} &ndash; {% endif %} bullgit - serving finest shit since 2013</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow,noodp,noydir">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="shortcut icon" href="https://bullg.it/media/pixels/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://bullg.it/media/pixels/favicon.png" type="image/x-icon">
+  <link rel="canonical" href="http://bullg.it">
+  <meta name="description" content="welcome to awesomeness. serving finest shit since 2013">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if page.title %} {{ page.title }} &ndash; {% endif %} bullgit - serving finest shit since 2013">
+  <meta property="og:description" content="welcome to awesomeness. serving finest shit since 2013">
+  <meta property="og:url" content="http://bullg.it">
+  <meta property="og:site_name" content="bullgit">
+  <meta property="og:image" content="https://bullg.it/media/pixels/bullgit-logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@bullgit">
+  <meta property="twitter:title" content="{% if page.title %} {{ page.title }} &ndash; {% endif %} bullgit - serving finest shit since 2013">
+  <meta property="twitter:description" content="welcome to awesomeness. serving finest shit since 2013">
+  <meta property="twitter:url" content="http://bullg.it">
+  <meta property="twitter:image" content="https://bullg.it/media/pixels/bullgit-logo.png">
+</head>
+<body>
+<div class="content--holder">
+  <div class="content--wrap">
+    <header class="gw site--header">
+      <div class="g one-half medium-one-whole brand">
+        <h1 class="site--headline"><span class="deco--blue">bull</span>git</h1>
+        <h2>welcome to awesomeness</h2>
+      </div>
+
+      <div class="g one-half medium-one-whole navigation">
+        <nav role="navigation" class="site--navigation">
+          <ul>
+            <li class="nav--list-item">
+              <a href="http://twitter.com/bullgit" title="bullgit on Twitter">Twitter</a>
+            </li>
+            <li class="nav--list-item">
+              <a href="http://github.com/bullgit" title="bullgit on Github">GitHub</a>
+            </li>
+            <li class="nav--list-item">
+              <a href="http://codepen.io/bullgit" title="bullgit on CodePen">CodePen</a>
+            </li>
+            <li class="nav--list-item">
+              <a href="http://chat.bullg.it" title="chat with bullgit">chat</a>
+            </li>
+            <li class="nav--list-item">
+              <a href="http://il.bullg.it" title="all issues and pull requests">issues</a>
+            </li>
+            <li class="nav--list-item">
+              <a href="https://bullg.it/media" title="media files of bullgit">media</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+   {% include intro.html %}
+</div>
+
 <div class=" code-of-conduct">
   <section class="featured--wrap visual-background text-center text-white">
     <h1><span>bullgit</span> Code of Conduct</h1>
@@ -87,3 +150,4 @@ layout: compress
     </div>
   </div>
 </div>
+{% include footer.html %}

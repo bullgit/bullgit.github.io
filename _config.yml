@@ -1,7 +1,7 @@
 # defining permalinks for the blog
 permalink: :title
 paginate_path: 'page:num'
-
+baseurl: /
 # using site.github in development
 repository: bullgit/bullgit.github.io
 gems:
