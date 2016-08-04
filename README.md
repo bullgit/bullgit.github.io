@@ -1,4 +1,4 @@
-[bullgit.github.io](http://bullg.it "Go to bullgit")
+[bullgit.github.io](http://bullg.it "Go to bullgit") ![](https://travis-ci.org/bullgit/bullgit.github.io.svg)
 =================
 
 ## Documentation
