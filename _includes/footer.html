@@ -1,5 +1,8 @@
 <footer class="site--footer">
 	<section class="featured--wrap" id="members">
+			<div class="content--wrap">
+				<span class="gitch-num">0</span> Gitches, and counting..
+			</div>
 		{% for member in site.data.members %}
 		<div class="group--member">
 			<a href="http://twitter.com/{{ member.twitter }}">
@@ -16,6 +19,10 @@
 			</div>
 		</div>
 		{% endfor %}
+
+	</section>
+	<section class="footer--wrap">
+		<small><a href="{{site.baseUrl}}/coc/">Code of conduct</a>   ●   <a href="https://github.com/bullgit/wiki/wiki">Wiki</a>   ●   <a href="https://bullg.it/map/">bullgiverse</a></small>
 	</section>
 </footer>
 <script src="assets/js/main.js"></script>
@@ -51,6 +58,12 @@
 	}
 
 	var easter_egg = new Konami(cssSwitch);
+
+	var gitches = document.querySelectorAll('.group--member');
+	var gitchesNum = document.querySelectorAll('.gitch-num');
+	for ( var i = 0; i < gitchesNum.length; i++) {
+		gitchesNum[i].innerHTML = gitches.length
+	}
 </script>
 </body>
 </html>
