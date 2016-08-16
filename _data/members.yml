@@ -261,3 +261,13 @@
   latlon:
     - 51.510738
     - 11.994144
+
+- name: Linus
+  twitter: lohfu_
+  url: https://lohfu.io
+  github: lohfu
+  email: lohfu@lohfu.io
+  gravatar: https://avatars2.githubusercontent.com/u/7393351?v=3&s=460
+  latlon:
+    - 55.7120115
+    - 13.2135157
