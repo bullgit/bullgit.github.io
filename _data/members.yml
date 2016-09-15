@@ -156,6 +156,7 @@
   latlon:
     - 51.21996787685509
     - 3.2211304939333743
+  pro: true
 
 - name: Hugo
   twitter: darbybrown
