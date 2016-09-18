@@ -50,6 +50,7 @@
   latlon:
     - 48.6837870
     - 2.4218570
+  pro: true
 
 - name: Felix
   twitter: dervondenbergen
