@@ -62,6 +62,7 @@
   latlon:
     - 48.20038
     - 16.35183
+  pro: true
 
 - name: Kanu
   twitter: kmandalwala
