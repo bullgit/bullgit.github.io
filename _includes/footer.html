@@ -1,10 +1,14 @@
 <footer class="site--footer">
 	<section class="featured--wrap" id="members">
-
+			<div class="content--wrap">
+				<span class="gitch-num">0</span> Gitches, and counting..
+			</div>
 		{% for member in site.data.members %}
 		<div class="group--member">
 			<a href="http://twitter.com/{{ member.twitter }}">
-				<img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}">
+				<div class="avatar--wrapper">
+					<img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}">
+				</div>
 			</a>
 			<h4>{{ member.name }}</h4>
 			<div class="social">
@@ -15,24 +19,24 @@
 			</div>
 		</div>
 		{% endfor %}
+
+	</section>
+	<section class="footer--wrap">
+		<small><a href="{{site.baseUrl}}/coc/">Code of conduct</a>   ●   <a href="https://github.com/bullgit/wiki/wiki">Wiki</a>   ●   <a href="https://bullg.it/map/">bullgiverse</a></small>
 	</section>
 </footer>
-<script type="text/javascript">
-// Add a script element as a child of the body
-function downloadJSAtOnload() {
-	var element = document.createElement('script');
-	element.src = '/assets/js/main.min.js';
-	document.body.appendChild(element);
-}
 
-// Check for browser support of event handling capability
-if (window.addEventListener) {
-	window.addEventListener("load", downloadJSAtOnload, false);
-} else if (window.attachEvent) {
-	window.attachEvent("onload", downloadJSAtOnload);
-} else {
-	window.onload = downloadJSAtOnload;
-}
+<!-- piwik etc. -->
+<script src="assets/js/main.js"></script>
+
+<!-- holmes -->
+<script src="https://haroen.me/holmes/js/holmes.js"></script>
+<script>
+  holmes({
+    input: '.search input',
+    find: '.project',
+    placeholder: '<div style="text-align: center;">no 💩 found, suggest some!</div>',
+  });
 </script>
 
 <!-- konami code -->
@@ -56,6 +60,12 @@ if (window.addEventListener) {
 	}
 
 	var easter_egg = new Konami(cssSwitch);
+
+	var gitches = document.querySelectorAll('.group--member');
+	var gitchesNum = document.querySelectorAll('.gitch-num');
+	for ( var i = 0; i < gitchesNum.length; i++) {
+		gitchesNum[i].innerHTML = gitches.length
+	}
 </script>
 </body>
 </html>

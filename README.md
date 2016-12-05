@@ -1,13 +1,14 @@
-[bullgit.github.io](http://bullg.it "Go to bullgit")
+[bullgit.github.io](http://bullg.it "Go to bullgit") ![](https://travis-ci.org/bullgit/bullgit.github.io.svg)
 =================
 
-## documentation
+## Documentation
 
 ### For the contributorish gitches
 - git clone <repo-url>
 - `cd path/to/project`
 - install jekyll if needed: `gem install jekyll`
-- `jekyll serve / watch`
+  - for the homepage repo list: `gem install jekyll-github-metadata`
+- `jekyll serve` or `jekyll serve --watch `
 
 ### Name
 
@@ -36,11 +37,12 @@ To add members add a new entry to the [_data/members.yml](https://github.com/bul
   latlon:
     - latitude of place of gitch
     - longitude of place of gitch
+  pro: true/false (whether you want to join https://github.com/bullgit/pro)
 ````
 
 ### Projects
 
-The Projects are automatically added via the GitHub API. Every new repo is listed on the main page.
+The Projects are automatically added via the GitHub API in jekyll. Every new repo is listed on the main page. Unfortunately, this means that GitHub won't rebuild the site if a new repository is added, you can make this change yourself by updating any file or pushing an empty commit.
 
 ### Join bullgit
 
