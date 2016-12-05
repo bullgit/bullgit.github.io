@@ -1,10 +1,9 @@
 - name: Jan
   twitter: reimersjan
-  url: http://jan.rs
   github: reimersjan
   codepen: reimersjan
   email: reimersjan@bullg.it
-  gravatar: https://www.gravatar.com/avatar/7d0be1c79210e8fa3ffe0b0895780fe0?s=460
+  gravatar: https://www.gravatar.com/avatar/70a6717ba8980c521fc75d3e44a31e2f?s=320
   title: Senior Beard Manager
   latlon:
     - 53.553407
@@ -16,7 +15,7 @@
   github: timpietrusky
   codepen: timpietrusky
   email: timpietrusky@bullg.it
-  gravatar: https://www.gravatar.com/avatar/13a9550a854af911366d9f5deb785cd6?s=460
+  gravatar: https://www.gravatar.com/avatar/13a9550a854af911366d9f5deb785cd6?s=320
   latlon:
     - 50.1109221
     - 8.6821267
@@ -26,7 +25,7 @@
   url: http://kevingimbel.com
   github: kevingimbel
   codepen: kevingimbel
-  gravatar: https://www.gravatar.com/avatar/6d391d8c3a528122f3f6c991821350ac?s=460
+  gravatar: https://www.gravatar.com/avatar/6d391d8c3a528122f3f6c991821350ac?s=320
   latlon:
     - 50.0123996
     - 8.4217125
@@ -36,7 +35,7 @@
   url: http://myxotod.com
   github: myxotod
   codepen: MyXoToD
-  gravatar: https://www.gravatar.com/avatar/a284083f6f4f9446723adf3b97b90151?s=460
+  gravatar: https://www.gravatar.com/avatar/a284083f6f4f9446723adf3b97b90151?s=320
   latlon:
     - 49.9928617
     - 8.2472526
@@ -46,11 +45,12 @@
   url: http://lucasbonomi.com
   github: LukyVj
   codepen: LukyVj
-  gravatar: https://www.gravatar.com/avatar/1ef5a7c2cc326fb4d4bfef8664bdeb49?s=460
+  gravatar: https://www.gravatar.com/avatar/1ef5a7c2cc326fb4d4bfef8664bdeb49?s=320
   title: Creative Frontpage Expert
   latlon:
     - 48.6837870
     - 2.4218570
+  pro: true
 
 - name: Felix
   twitter: dervondenbergen
@@ -58,28 +58,29 @@
   github: dervondenbergen
   codepen: dervondenbergen
   email: felix@bullg.it
-  gravatar: https://www.gravatar.com/avatar/68bb57deeafda8981e331a91036f6184?s=460
+  gravatar: https://www.gravatar.com/avatar/68bb57deeafda8981e331a91036f6184?s=320
   title: Minimum Viable Product Developer
   latlon:
     - 48.20038
     - 16.35183
+  pro: true
 
 - name: Kanu
   twitter: kmandalwala
   url: http://seebeetee.com
   github: krman009
   codepen: kman
-  gravatar: https://www.gravatar.com/avatar/69853eaa3e2af813cb7f1bb8bda64012?s=460
+  gravatar: https://www.gravatar.com/avatar/69853eaa3e2af813cb7f1bb8bda64012?s=320
   latlon:
     - 22.3038945
     - 70.8021599
 
 - name: Nils
   twitter: schoenwaldnils
-  url: http://www.schoenwald-media.de
+  url: http://www.schoenwald.media
   github: schoenwaldnils
   codepen: schoenwaldnils
-  gravatar: https://www.gravatar.com/avatar/ddd025871fb3f8225031a011d5d7b08c?s=460
+  gravatar: https://www.gravatar.com/avatar/42b48966b3c4cb81b6900ca638e3a76c?s=320
   title: Junior Beard Developer
   latlon:
     - 53.561475
@@ -90,38 +91,28 @@
   url: http://0x04.de
   github: /0x04
   codepen: /0x04
-  gravatar: https://www.gravatar.com/avatar/7394c127882b3240818c86bbdc007599?s=460
+  gravatar: https://www.gravatar.com/avatar/7394c127882b3240818c86bbdc007599?s=320
   latlon:
     - 47.8966802
     - 10.4151477
-
-- name: Nick
-  twitter: shvelo96
-  url: http://pirrate.me
-  github: shvelo
-  codepen: shvelo
-  gravatar: https://www.gravatar.com/avatar/5757771770a152302b03f8e78c7b105a?s=460
-  latlon:
-    - 41.716667
-    - 44.783333
 
 - name: Ty
   twitter: TyBpa
   url: http://tystrong.me
   github: tystrong
   codepen: spikeyty
-  gravatar: https://gravatar.com/avatar/27156a00138d4f99d6edb350e3bb9a75?s=460
+  gravatar: https://gravatar.com/avatar/27156a00138d4f99d6edb350e3bb9a75?s=320
   latlon:
     - 39.440336
     - -84.3621634
 
 - name: Jose
   twitter: jofpin
-  url: http://jofp.in
+  url: https://spartug.com
   github: jofpin
   codepen: jofpin
   title: Gitch Hacker
-  gravatar: https://www.gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=460
+  gravatar: https://www.gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=320
   latlon:
     - 4.598056
     - -74.075833
@@ -131,7 +122,7 @@
   url: http://leeroyd.com
   github: leeroyd
   codepen: leeroyd
-  gravatar: https://www.gravatar.com/avatar/b48a8a25d52dd1eda00c675acea7f628?s=460
+  gravatar: https://www.gravatar.com/avatar/b48a8a25d52dd1eda00c675acea7f628?s=320
   latlon:
     - 48.7890320
     - 2.3699090
@@ -141,7 +132,7 @@
   url: http://timbog80.github.io
   github: timbog80
   codepen: tbogdanov80
-  gravatar: https://avatars1.githubusercontent.com/u/7907024?v=2&s=460
+  gravatar: https://avatars1.githubusercontent.com/u/7907024?v=2&s=320
   latlon:
     - 45.815115
     - -122.7426009
@@ -151,7 +142,7 @@
   url: http://clement-galidie.fr
   github: clementgalidie
   codepen: jQzz
-  gravatar: https://avatars2.githubusercontent.com/clementgalidie?&s=460
+  gravatar: https://avatars2.githubusercontent.com/clementgalidie?&s=320
   latlon:
     - 48.861417
     - 2.536463
@@ -163,17 +154,18 @@
   codepen: Haroenv
   title: Source Code Explorer
   email: haroen@bullg.it
-  gravatar: https://avatars2.githubusercontent.com/u/6270048?v=3&s=460
+  gravatar: https://avatars2.githubusercontent.com/u/6270048?v=3&s=320
   latlon:
     - 51.21996787685509
     - 3.2211304939333743
+  pro: true
 
 - name: Hugo
   twitter: darbybrown
   url: http://darbybrown.com
   github: DarbyBrown
   codepen: hugo
-  gravatar: https://avatars0.githubusercontent.com/u/4050771?v=3&s=460
+  gravatar: https://avatars0.githubusercontent.com/u/4050771?v=3&s=320
   latlon:
     - 50.822841
     - -0.137045
@@ -183,7 +175,7 @@
   url: http://scottnix.com
   github: scottnix
   codepen: scottnix
-  gravatar: https://avatars1.githubusercontent.com/u/936749?v=3&s=460
+  gravatar: https://avatars1.githubusercontent.com/u/936749?v=3&s=320
   latlon:
     - 32.706620
     - -117.107180
@@ -194,7 +186,7 @@
   github: JessWallace94
   title: Ambitious Gitch | 4SBR
   email: jess@bullg.it
-  gravatar: https://avatars1.githubusercontent.com/u/6696613?v=3&s=460
+  gravatar: https://avatars1.githubusercontent.com/u/6696613?v=3&s=320
   latlon:
     - 51.406638
     - -0.299850
@@ -204,17 +196,17 @@
   url: http://hornebom.com
   github: hornebom
   codepen: Hornebom
-  gravatar: https://avatars2.githubusercontent.com/u/7050932?v=3&s=460
+  gravatar: https://avatars2.githubusercontent.com/u/7050932?v=3&s=320
   latlon:
-    - 51.95582
-    - 7.64395
+    - 51.89641
+    - 4.46045
 
 - name: Nika
   twitter: nikazawila
   url: http://nikazawila.com
   github: nikazawila
   codepen: nikazawila
-  gravatar: https://avatars0.githubusercontent.com/u/9191638?v=3&s=460
+  gravatar: https://avatars0.githubusercontent.com/u/9191638?v=3&s=320
   latlon:
     - 52.5513466
     - 13.3766368
@@ -224,7 +216,7 @@
   url: http://ronanlevesque.fr
   github: ronanlevesque
   codepen: eskiiss
-  gravatar: https://avatars2.githubusercontent.com/u/2734671?v=3&s=460
+  gravatar: https://avatars2.githubusercontent.com/u/2734671?v=3&s=320
   latlon:
     - 48.891234
     - 2.351230
@@ -235,7 +227,7 @@
   github: yadomi
   codepen: yadomi
   title: Independent Git Cherry Picker (IGCP)
-  gravatar: https://avatars2.githubusercontent.com/yadomi?&s=460
+  gravatar: https://avatars2.githubusercontent.com/yadomi?&s=320
   latlon:
     - 48.861417
     - 2.536463
@@ -245,7 +237,7 @@
   url: http://github.com/victormours/dotfiles
   github: victormours
   codepen: victormours
-  gravatar: https://avatars2.githubusercontent.com/victormours?&s=460
+  gravatar: https://avatars2.githubusercontent.com/victormours?&s=320
   latlon:
     - 48.880744
     - 2.382808
@@ -256,7 +248,29 @@
   github: mischah
   email: mail@michael-kuehnel.de
   title: Inhouse Hashtag Manager (IHM)
-  gravatar: https://de.gravatar.com/userimage/20290925/c39e4390de871496acfae09ed9d618b5.jpg?size=460
+  gravatar: https://de.gravatar.com/userimage/20290925/c39e4390de871496acfae09ed9d618b5.jpg?size=320
   latlon:
     - 51.3131600
     - 9.4597700
+
+- name: Johannes
+  twitter: JohJakob
+  url: http://johjakob.de
+  github: JohJakob
+  codepen: JohJakob
+  email: johannes.jakob@elg-halle.de
+  title: Bullshit Experience Designer (BXD)
+  gravatar: https://avatars2.githubusercontent.com/u/9888537?v=3&s=320
+  latlon:
+    - 51.510738
+    - 11.994144
+
+- name: Linus
+  twitter: lohfu_
+  url: https://lohfu.io
+  github: lohfu
+  email: lohfu@lohfu.io
+  gravatar: https://avatars2.githubusercontent.com/u/7393351?v=3&s=460
+  latlon:
+    - 55.7120115
+    - 13.2135157

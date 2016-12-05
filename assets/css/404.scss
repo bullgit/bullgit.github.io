@@ -1,0 +1,33 @@
+---
+#frontmatter
+---
+@import "../assets/css/font/fontelico/fontelico";
+
+/*@import url(https://weloveiconfonts.com/api/?family=fontelico);*/
+
+/* fontelico */
+[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+}
+
+body {
+  background: #1393d5;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.5em;
+}
+body a {
+  color: inherit;
+}
+body p, body ul {
+  text-align: center;
+}
+body li {
+  display: inline-block;
+  margin: 1rem;
+}
+@media all and (max-width: 40em) {
+  body {
+    font-size: 1.4em;
+  }
+}

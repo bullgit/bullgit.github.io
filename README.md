@@ -1,4 +1,4 @@
-[bullgit.github.io](http://bullg.it "Go to bullgit")
+[bullgit.github.io](http://bullg.it "Go to bullgit") ![](https://travis-ci.org/bullgit/bullgit.github.io.svg)
 =================
 
 ## Documentation
@@ -37,6 +37,7 @@ To add members add a new entry to the [_data/members.yml](https://github.com/bul
   latlon:
     - latitude of place of gitch
     - longitude of place of gitch
+  pro: true/false (whether you want to join https://github.com/bullgit/pro)
 ````
 
 ### Projects
