@@ -274,3 +274,13 @@
   latlon:
     - 55.7120115
     - 13.2135157
+
+- name: René
+  twitter: rvrng
+  url: http://rene.js.org
+  github: revrng
+  email: rene.viering@gmail.com
+  gravatar: https://avatars2.githubusercontent.com/revrng
+  latlon:
+    - 51.3149725
+    - 9.3905755
