@@ -285,3 +285,14 @@
   latlon:
     - 51.3149725
     - 9.3905755
+    
+- name: Richard
+  twitter: neulandkarsten
+  github: richardkarsten
+  codepen: richard_karsten
+  email: richardkarsten@webdasein.net
+  title: Cronjob Initiation Artist (CIA)
+  gravatar: https://avatars2.githubusercontent.com/u/9954120?v=3&u=0098b4c6ba61c2029452e4d2bc04585db6904e9d&s=400
+  latlon:
+    - 51.471999
+    - 11.978688
