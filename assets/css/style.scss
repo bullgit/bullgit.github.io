@@ -611,3 +611,15 @@ $color--text: #eaeaea;
 .hidden {
   display: none;
 }
+
+.emoji {
+    font-weight: normal;
+}
+
+.stars {
+    float: right;
+
+    &:after {
+        content: '★';
+    }
+}
