@@ -1,7 +1,7 @@
 <footer class="site--footer">
 	<section class="featured--wrap" id="members">
 			<div class="content--wrap">
-				<span class="gitch-num">0</span> Gitches, and counting..
+				{{site.data.members | size}} Gitches, and counting..
 			</div>
 		{% for member in site.data.members %}
 		<div class="group--member">
