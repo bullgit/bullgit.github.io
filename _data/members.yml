@@ -285,3 +285,15 @@
   latlon:
     - 51.3149725
     - 9.3905755
+    
+- name: Richard
+  twitter: neulandkarsten
+  url: http://richardkarsten.de
+  github: richardkarsten  
+  codepen: richard_karsten
+  email: richardkarsten@webdasein.net
+  title: continuous integration artist
+  gravatar: https://s3-us-west-2.amazonaws.com/s.cdpn.io/146179/profile/profile-512.jpg
+  latlon:
+    - 51.510738
+    - 11.994144
