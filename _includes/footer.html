@@ -8,7 +8,7 @@
 			<a {% if member.twitter %}href="https://twitter.com/{{ member.twitter }}"{% endif %}
 			   {% if member.github %}href="https://github.com/{{ member.github }}"{% endif %}>
 				<div class="avatar--wrapper">
-					<img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}">
+					<img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}" title="{{ member.title }}">
 				</div>
 			</a>
 			<h4>{{ member.name }}</h4>
