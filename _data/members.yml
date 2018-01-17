@@ -108,14 +108,16 @@
 
 - name: Jose
   twitter: jofpin
-  url: https://spartug.com
+  url: https://boxug.com
   github: jofpin
   codepen: jofpin
   title: Gitch Hacker
+  email: jose@boxug.com
   gravatar: https://www.gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=320
   latlon:
     - 4.598056
     - -74.075833
+  pro: true
 
 - name: Leeroyd
   twitter: leeroydl
