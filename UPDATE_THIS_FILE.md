@@ -11,3 +11,5 @@ If you want to trigger a new jekyll build. Add whatever you want
 Add the random calculator … I wanna se that emoji
 
 [Haroenv] - bump a rebuild for the new projecto
+
+[0x04] - bump a rebuild
