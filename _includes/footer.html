@@ -5,15 +5,15 @@
 			</div>
 		{% for member in site.data.members %}
 		<div class="group--member">
-			<a {% if member.twitter %}href="https://twitter.com/{{ member.twitter }}"{% endif %}
-			   {% if member.github %}href="https://github.com/{{ member.github }}"{% endif %}>
+			<a {% if member.url %}href="{{ member.url }}"{% endif %}>
 				<div class="avatar--wrapper">
-					<img src="{{ member.gravatar }}" alt="{{ member.name }}" id="{{ member.name }}" title="{{ member.title }}">
+					<img src="{{ member.gravatar }}" alt="{{ member.name }}" title="{{ member.title }}">
 				</div>
 			</a>
 			<h4>{{ member.name }}</h4>
 			<div class="social">
 				{% if member.url %}<a href="{{ member.url }}" class="genericon-link"></a>{% endif %}
+				{% if member.twitter %}<a href="https://twitter.com/{{ member.twitter }}" class="genericon-twitter"></a>{% endif %}
 				{% if member.github %}<a href="http://github.com/{{ member.github }}" class="genericon-github"></a>{% endif %}
 				{% if member.codepen %}<a href="http://codepen.io/{{ member.codepen }}" class="genericon-codepen"></a>{% endif %}
 				{% if member.email %}<a href="mailto:{{ member.email }}" class="genericon-mail"></a>{% endif %}
