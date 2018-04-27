@@ -92,6 +92,7 @@
   github: /0x04
   codepen: /0x04
   gravatar: https://www.gravatar.com/avatar/7394c127882b3240818c86bbdc007599?s=320
+  title: Qualitative Table Layout King (QTLK)
   latlon:
     - 47.8966802
     - 10.4151477
@@ -297,11 +298,11 @@
   latlon:
     - 51.3149725
     - 9.3905755
-    
+
 - name: Richard
   twitter: neulandkarsten
   url: http://richardkarsten.de
-  github: richardkarsten  
+  github: richardkarsten
   codepen: richard_karsten
   email: richardkarsten@webdasein.net
   title: continuous integration artist
