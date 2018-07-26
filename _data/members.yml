@@ -307,3 +307,15 @@
   latlon:
     - 51.510738
     - 11.994144
+
+- name: Lea
+  twitter: terabaud
+  url: https://terabaud.github.io/
+  github: terabaud
+  email: terabaud@gmail.com
+  title: Senior Creative Ravioli Dispenser (SCRD)
+  gravatar: https://avatars1.githubusercontent.com/u/949950
+  latlon:
+    - 53.072614
+    - 7.423268
+    
