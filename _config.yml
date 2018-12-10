@@ -4,7 +4,7 @@ paginate_path: 'page:num'
 baseurl: /
 # using site.github in development
 repository: bullgit/bullgit.github.io
-gems:
+plugins:
   - 'jekyll-github-metadata'
 
 # other settings
