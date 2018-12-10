@@ -195,9 +195,10 @@
     - -0.299850
 
 - name: pixelass
-  url: pixelass.com
-  title: depressed
-  gravatar: https://image.ibb.co/bwbG0L/gregortemp.png
+  url: http://pixelass.com
+  title: Transdimensional thinker
+  github: pixelass
+  gravatar: https://avatars3.githubusercontent.com/u/1148334?s=460&v=4
   latlon:
     - 53.583860
     - 9.99069
@@ -319,7 +320,7 @@
   latlon:
     - 53.072614
     - 7.423268
-    
+
 - name: Angela
   github: agalliat
   codepen: agalliat
