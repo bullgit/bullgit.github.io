@@ -67,10 +67,11 @@
 
 - name: Kanu
   twitter: kmandalwala
-  url: http://seebeetee.com
+  url: https://seebeetee.com
   github: krman009
   codepen: kman
   gravatar: https://www.gravatar.com/avatar/69853eaa3e2af813cb7f1bb8bda64012?s=320
+  title: Evolutionary SCSS Developer (ESD)
   latlon:
     - 22.3038945
     - 70.8021599
