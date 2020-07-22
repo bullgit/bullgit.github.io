@@ -39,7 +39,7 @@
 </script>
 
 <!-- konami code -->
-<script src="https://cdn.rawgit.com/snaptortoise/konami-js/master/konami.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/snaptortoise/konami-js@master/konami.js"></script>
 <script>
 	function loadcss(url) {
 		var head = document.getElementsByTagName('head')[0],
@@ -52,7 +52,7 @@
 	}
 	function cssSwitch() {
 		var socialicons = document.querySelectorAll('.social > a');
-		loadcss('https://cdn.rawgit.com/bullgit/comic-sans-it/compatible/style.css');
+		loadcss('https://cdn.jsdelivr.net/gh/bullgit/comic-sans-it@compatible/style.css');
 		Array.prototype.forEach.call(socialicons, function (icon) {
 			icon.setAttribute('style', 'font-family: Genericons !important');
 		});
